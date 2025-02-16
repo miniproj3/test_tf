@@ -2,7 +2,7 @@ resource "aws_route_table" "tf_pri_rtb" {
   vpc_id = aws_vpc.tf_vpc.id
 
   tags = {
-    Name = "tf_pri_rt"
+    Name = "tf_pri_rtb"
   }
 }
 
