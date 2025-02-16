@@ -2,7 +2,7 @@
 resource "aws_security_group" "tf_rds_sg" {
   name        = "tf_rds_sg"
   description = "Security group for RDS"
-  vpc_id      = aws_vpc.vss_vpc.id
+  vpc_id      = aws_vpc.tf_vpc.id
 
   # EKS 클러스터 및 VPC 내부에서의 접근 허용
   #ingress {
