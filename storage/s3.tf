@@ -15,27 +15,18 @@ resource "aws_s3_bucket" "tf_backup_bucket" {
   }
 }
 
-# S3 버킷 소유권 제어
-resource "aws_s3_bucket_ownership_controls" "vss_backup_bucket_ownership" {
-  bucket = aws_s3_bucket.vss_backup_bucket.id
-
-  rule {
-    object_ownership = "BucketOwnerPreferred"
-  }
-}
-
-# S3 버킷 버전 관리 활성화
-resource "aws_s3_bucket_versioning" "vss_backup_versioning" {
-  bucket = aws_s3_bucket.vss_backup_bucket.id
+# S3 버킷 버전 관리 활성화 - 실수로 삭제된 데이터 복구, 변경 이력 추적 목적
+resource "aws_s3_bucket_versioning" "tf_backup_versioning" {
+  bucket = aws_s3_bucket.tf_backup_bucket.id
 
   versioning_configuration {
     status = "Enabled" # 버전 관리 활성화
   }
 }
 
-# S3 버킷 수명 주기 정책 설정 (데이터 자동 삭제)
-resource "aws_s3_bucket_lifecycle_configuration" "vss_backup_lifecycle" {
-  bucket = aws_s3_bucket.vss_backup_bucket.id
+# S3 버킷 수명 주기 정책 설정 (데이터 자동 삭제) - 비용 절감 목적
+resource "aws_s3_bucket_lifecycle_configuration" "tf_backup_lifecycle" {
+  bucket = aws_s3_bucket.tf_backup_bucket.id
 
   rule {
     id     = "Delete old versions"
@@ -49,9 +40,9 @@ resource "aws_s3_bucket_lifecycle_configuration" "vss_backup_lifecycle" {
   }
 }
 
-# S3 버킷 암호화 설정 (AES256)
-resource "aws_s3_bucket_server_side_encryption_configuration" "vss_backup_encryption" {
-  bucket = aws_s3_bucket.vss_backup_bucket.id
+# S3 버킷 암호화 설정 (AES256) - 데이터 보안 목적
+resource "aws_s3_bucket_server_side_encryption_configuration" "tf_backup_encryption" {
+  bucket = aws_s3_bucket.tf_backup_bucket.id
 
   rule {
     apply_server_side_encryption_by_default {
@@ -60,22 +51,12 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "vss_backup_encryp
   }
 }
 
-# S3 버킷 공용 접근 차단
-resource "aws_s3_bucket_public_access_block" "vss_backup_public_access_block" {
-  bucket = aws_s3_bucket.vss_backup_bucket.id
-
-  block_public_acls       = true
-  block_public_policy     = true
-  ignore_public_acls      = true
-  restrict_public_buckets = true
-}
-
 # Terraform 백엔드 설정 (S3 및 DynamoDB 사용)
 terraform {
   backend "s3" {
-    bucket         = "vss-backup-bucket-${random_string.suffix.result}"
-    key            = "path/to/terraform.tfstate"
-    region         = "us-west-2"
+    bucket         = "tf-backup-bucket-${random_string.suffix.result}"
+    key            = "envs/infra/terraform.tfstate"
+    region         = "ap-northeast-2"
     dynamodb_table = aws_dynamodb_table.terraform_locks.name
   }
 }
