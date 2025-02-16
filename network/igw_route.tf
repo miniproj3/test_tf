@@ -1,4 +1,4 @@
-resource "aws_route_table" "tf_pub_rt" {
+resource "aws_route_table" "tf_pub_rtb" {
   vpc_id = aws_vpc.tf_vpc.id
 
   route {
@@ -13,10 +13,10 @@ resource "aws_route_table" "tf_pub_rt" {
 
 resource "aws_route_table_association" "tf_pub_sub_1_association" {
   subnet_id      = aws_subnet.tf_pub_sub_1.id
-  route_table_id = aws_route_table.tf_pub_rt.id
+  route_table_id = aws_route_table.tf_pub_rtb.id
 }
 
 resource "aws_route_table_association" "tf_pub_sub_2_association" {
   subnet_id      = aws_subnet.tf_pub_sub_2.id
-  route_table_id = aws_route_table.tf_pub_rt.id
+  route_table_id = aws_route_table.tf_pub_rtb.id
 }
