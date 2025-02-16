@@ -9,6 +9,6 @@ resource "aws_instance" "tf_bastion" {
   depends_on = [aws_key_pair.tf_bastion_key]
 
   tags = {
-    Name = "bastion"
+    Name = "tf_bastion"
   }
 }
