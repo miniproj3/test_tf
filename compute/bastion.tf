@@ -6,7 +6,7 @@ resource "aws_instance" "tf_bastion" {
   vpc_security_group_ids = [aws_security_group.tf_bastion_sg.id]
   associate_public_ip_address = true
   
-  depends_on = [aws_key_pair.tf_bastion_key]
+  depends_on = [aws_key_pair.tf_bastion_key]  # tf_bastion_key가 먼저 생성되어야 한다.
 
   tags = {
     Name = "tf_bastion"
