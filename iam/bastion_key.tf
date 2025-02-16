@@ -1,6 +1,5 @@
 resource "tls_private_key" "tf_bastion_key" {
   algorithm   = "RSA"
-  rsa_bits  = 2048  # 4096은 더 강력한 보안이지만, 성능이 느릴 수 있음
 }
 
 resource "local_file" "tf_bastion_private_key" {
