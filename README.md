@@ -7,12 +7,12 @@ app.py에서 RDS 비밀번호를 AWS Secrets Manager에서 가져오도록 수�
 
 다음은 해야 할 작업 목록입니다:
 
-1. app.py 수정 (Secrets Manager에서 RDS 비밀번호 가져오기)
+**1. app.py 수정 (Secrets Manager에서 RDS 비밀번호 가져오기)**
 - AWS SDK (boto3)를 사용해 AWS Secrets Manager에서 MYSQL_PASSWORD를 가져오도록 수정
 - 나머지 환경 변수(MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE, MYSQL_USER)는 기존처럼 os.getenv()를 통해 ConfigMap에서 설정
-2. Dockerfile 수정
+**2. Dockerfile 수정**
 - boto3 설치 추가 (AWS SDK 사용을 위해 필요)
-3. 쿠버네티스 매니페스트 작성
+**3. 쿠버네티스 매니페스트 작성**
 - ConfigMap: MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE, MYSQL_USER 값 설정
 - Deployment: 환경 변수에서 ConfigMap을 사용하고, MYSQL_PASSWORD는 AWS Secrets Manager에서 가져오도록 설정
 - Service: EKS에서 컨테이너를 외부에 노출하는 서비스 생성
@@ -21,7 +21,7 @@ app.py에서 RDS 비밀번호를 AWS Secrets Manager에서 가져오도록 수�
 -----------------------------------
 
 배포 절차
-ECR에 컨테이너 이미지 푸시
+**ECR에 컨테이너 이미지 푸시**
 ```
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com
 docker build -t gunicorntest .
@@ -29,7 +29,7 @@ docker tag gunicorntest:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/
 docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/gunicorntest:latest 
 ```
 
-Kubernetes 리소스 생성
+**Kubernetes 리소스 생성**
 ```
 kubectl apply -f db-configmap.yaml
 kubectl apply -f service-account.yaml
