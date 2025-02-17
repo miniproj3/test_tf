@@ -13,7 +13,7 @@ resource "aws_eks_cluster" "tf_eks_cluster" {
   security_group_ids = [aws_security_group.tf_eks_cluster_sg.id]
 
   tags = {
-    Name = tf_eks_cluster
+    Name = "tf_eks_cluster"
   }
 }
 
