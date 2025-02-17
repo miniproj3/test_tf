@@ -1,10 +1,10 @@
 resource "aws_route_table" "tf_pri_rtb" {
   vpc_id = aws_vpc.tf_vpc.id
 
-  route {  # route 추가
+  /* route {  # route 추가
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_nat_gateway.tf_nat.id
-  }
+  } */
 
   tags = {
     Name = "tf_pri_rtb"
