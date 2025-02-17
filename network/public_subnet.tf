@@ -6,6 +6,7 @@ resource "aws_subnet" "tf_pub_sub_1" {
 
   tags = {
     Name = "tf_pub_sub_1"
+    kubernetes.io/role/elb       = "1"  # ALB 배포를 위한 태그 추가
   }
 }
 
@@ -17,5 +18,6 @@ resource "aws_subnet" "tf_pub_sub_1" {
 
   tags = {
     Name = "tf_pub_sub_2"
+    kubernetes.io/role/elb       = "1"  # ALB 배포를 위한 태그 추가
   }
 }
