@@ -25,6 +25,7 @@ app.py에서 RDS 비밀번호를 AWS Secrets Manager에서 가져오도록 수�
 배포 절차
 **ECR에 컨테이너 이미지 푸시**
 ```
+# 해당 부분은 ECR 레포(test-ecr)에 대한 푸시 명령 보고 확인
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com
 docker build -t gunicorntest .
 docker tag gunicorntest:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/gunicorntest:latest
