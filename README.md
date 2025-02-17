@@ -9,9 +9,11 @@ app.py에서 RDS 비밀번호를 AWS Secrets Manager에서 가져오도록 수�
 
 **1. app.py 수정 (Secrets Manager에서 RDS 비밀번호 가져오기)**
 - AWS SDK (boto3)를 사용해 AWS Secrets Manager에서 MYSQL_PASSWORD를 가져오도록 수정
-- 나머지 환경 변수(MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE, MYSQL_USER)는 기존처럼 os.getenv()를 통해 ConfigMap에서 설정
+- 나머지 환경 변수(MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE, MYSQL_USER)는 기존처럼 os.getenv()를 통해 ConfigMap에서 설정 <br>
+
 **2. Dockerfile 수정**
-- boto3 설치 추가 (AWS SDK 사용을 위해 필요)
+- boto3 설치 추가 (AWS SDK 사용을 위해 필요) <br>
+
 **3. 쿠버네티스 매니페스트 작성**
 - ConfigMap: MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE, MYSQL_USER 값 설정
 - Deployment: 환경 변수에서 ConfigMap을 사용하고, MYSQL_PASSWORD는 AWS Secrets Manager에서 가져오도록 설정
