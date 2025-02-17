@@ -6,3 +6,13 @@
 │   11: resource "aws_eks_node_group" "tf_eks_managed_node_group" {
 │
 ╵
+-----------------
+
+
+│ Error: waiting for EKS Node Group (tf-eks-cluster:tf-eks-managed-node-group) create: unexpected state 'CREATE_FAILED', wanted target 'ACTIVE'. last error: i-0305e6517f722aefa, i-0f3e74cc1787d5a06: NodeCreationFailure: Instances failed to join the kubernetes cluster
+│
+│   with aws_eks_node_group.tf_eks_managed_node_group,
+│   on ✏️eks_nodegroup.tf line 21, in resource "aws_eks_node_group" "tf_eks_managed_node_group":
+│   21: resource "aws_eks_node_group" "tf_eks_managed_node_group" {
+│
+╵
