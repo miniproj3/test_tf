@@ -1,0 +1,13 @@
+# RDS 정보 저장
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+  namespace: default
+data:
+  MYSQL_HOST: "rds-mysql.internal.test.com"
+  MYSQL_PORT: "3306"
+  MYSQL_DATABASE: "testdb"
+  MYSQL_USER: "admin"
+  AWS_REGION: "us-east-1"
+  SECRET_NAME: "rds-secret"  # AWS Secrets Manager에 저장된 Secret 이름
