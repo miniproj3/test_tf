@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask
+  template:
+    metadata:
+      labels:
+        app: flask
+    spec:
+      serviceAccountName: flask-app-sa  # IAM Role과 연결
+      containers:
+      - name: flask-app
+        image: <AWS_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/gunicorntest:latest
+        ports:
+        - containerPort: 5000
+        envFrom:
+        - configMapRef:
+            name: db-config
