@@ -32,7 +32,7 @@ docker tag gunicorntest:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/
 docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/gunicorntest:latest 
 ```
 
-**Kubernetes 리소스 생성**
+**Kubernetes 리소스 생성**  (test_demo_yaml 브랜치 참고)
 ```
 kubectl apply -f db-configmap.yaml
 kubectl apply -f service-account.yaml
