@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flask-app
-  namespace: default
 spec:
   replicas: 2
   selector:
@@ -14,12 +13,26 @@ spec:
       labels:
         app: flask
     spec:
-      serviceAccountName: flask-app-sa  # IAM Role과 연결
       containers:
-      - name: flask-app
-        image: <AWS_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/gunicorntest:latest
+      - name: test-container
+        image: 707677861059.dkr.ecr.ap-northeast-2.amazonaws.com/test-ecr-namespace/test-ecr:latest
         ports:
         - containerPort: 5000
         envFrom:
         - configMapRef:
-            name: db-config
+            name: mysql-config
+        env:
+        - name: MYSQL_USER
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_USER
+        - name: MYSQL_DATABASE
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: MYSQL_DATABASE
+        - name: AWS_SECRET_NAME
+          value: "rds!db-58935263-034e-4e28-9291-51feff61e554"   # Secrets Manager의 시크릿 이름
+        - name: AWS_REGION
+          value: "ap-northeast-2"
