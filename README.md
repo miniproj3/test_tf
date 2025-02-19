@@ -3,8 +3,8 @@
 **Kubernetes 리소스 생성**
 ```
 kubectl apply -f configmap.yaml
-kubectl apply -f service-account.yaml
-kubectl apply -f app-deployment.yaml
+kubectl apply -f secret.yaml
+kubectl apply -f deployment.yaml
 kubectl apply -f app-service.yaml
 ```
 <br>
