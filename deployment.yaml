@@ -21,11 +21,6 @@ spec:
         envFrom:
         - configMapRef:
             name: mysql-config
-            key: MYSQL_HOST
-        envFrom:
-        - configMapRef:
-            name: mysql-config
-            key: MYSQL_PORT
         env:
         - name: MYSQL_USER
           valueFrom:
@@ -37,7 +32,7 @@ spec:
             secretKeyRef:
               name: mysql-secret
               key: MYSQL_DATABASE
-        - name: SECRET_NAME
+        - name: AWS_SECRET_NAME
           value: "rds!db-58935263-034e-4e28-9291-51feff61e554"   # Secrets Manager의 시크릿 이름
         - name: AWS_REGION
           value: "ap-northeast-2"
