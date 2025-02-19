@@ -1,4 +1,3 @@
-
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated
 with the following symbols:
   + create
@@ -161,15 +160,13 @@ Terraform will perform the following actions:
 
   # aws_eks_node_group.tf_eks_managed_node_group will be created
   + resource "aws_eks_node_group" "tf_eks_managed_node_group" {
-      + ami_type               = "AL2_x86_64"
+      + ami_type               = (known after apply)
       + arn                    = (known after apply)
       + capacity_type          = "ON_DEMAND"
       + cluster_name           = "tf-eks-cluster"
-      + disk_size              = 20
+      + disk_size              = (known after apply)
       + id                     = (known after apply)
-      + instance_types         = [
-          + "t3.medium",
-        ]
+      + instance_types         = (known after apply)
       + node_group_name        = "tf-eks-managed-node-group"
       + node_group_name_prefix = (known after apply)
       + node_role_arn          = (known after apply)
@@ -185,12 +182,13 @@ Terraform will perform the following actions:
         }
       + version                = (known after apply)
 
-      + node_repair_config (known after apply)
-
-      + remote_access {
-          + ec2_ssh_key               = "tf-bastion-key"
-          + source_security_group_ids = (known after apply)
+      + launch_template {
+          + id      = (known after apply)
+          + name    = (known after apply)
+          + version = "$Latest"
         }
+
+      + node_repair_config (known after apply)
 
       + scaling_config {
           + desired_size = 3
@@ -397,6 +395,42 @@ Terraform will perform the following actions:
       + tags_all        = {
           + "Name" = "tf_bastion_key"
         }
+    }
+
+  # aws_launch_template.tf_eks_node_lt will be created
+  + resource "aws_launch_template" "tf_eks_node_lt" {
+      + arn                    = (known after apply)
+      + default_version        = (known after apply)
+      + id                     = (known after apply)
+      + image_id               = "ami-0fa05db9e3c145f63"
+      + instance_type          = "t3.medium"
+      + latest_version         = (known after apply)
+      + name                   = (known after apply)
+      + name_prefix            = "tf-eks-node-lt"
+      + tags                   = {
+          + "Name"               = "tf_eks_node_lt"
+          + "eks:cluster-name"   = "tf-eks-cluster"
+          + "eks:nodegroup-name" = "tf-eks-managed-node-group"
+        }
+      + tags_all               = {
+          + "Name"               = "tf_eks_node_lt"
+          + "eks:cluster-name"   = "tf-eks-cluster"
+          + "eks:nodegroup-name" = "tf-eks-managed-node-group"
+        }
+      + vpc_security_group_ids = (known after apply)
+
+      + block_device_mappings {
+          + device_name = "/dev/xvda"
+
+          + ebs {
+              + iops        = 3000
+              + throughput  = 125
+              + volume_size = 20
+              + volume_type = "gp3"
+            }
+        }
+
+      + metadata_options (known after apply)
     }
 
   # aws_nat_gateway.tf_nat will be created
@@ -1055,7 +1089,7 @@ Terraform will perform the following actions:
       + rsa_bits                      = 2048
     }
 
-Plan: 40 to add, 0 to change, 0 to destroy.
+Plan: 41 to add, 0 to change, 0 to destroy.
 
 Changes to Outputs:
   + bastion_public_ip = (known after apply)
