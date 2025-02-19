@@ -151,7 +151,7 @@ aws_route53_record.tf_rds_endpoint: Still creating... [10s elapsed]
 aws_route53_record.tf_rds_endpoint: Still creating... [20s elapsed]
 aws_route53_record.tf_rds_endpoint: Creation complete after 20s [id=Z03639973SS2Z1M1XJDQ5_rds.tf.private.com_CNAME]
 ╷
-│ Error: creating IAM Role (tf-eks-cluster-iam-role): operation error IAM: CreateRole, https response error StatusCode: 409, RequestID: 743400a4-1c8a-4c6a-a8c3-18699ff1b153, EntityAlreadyExists: Role with name tf-eks-cluster-iam-role already exists.
+│ Error: creating IAM Role (tf-eks-cluster-iam-role): operation error IAM: CreateRole, https response error StatusC                                                             ode: 409, RequestID: 743400a4-1c8a-4c6a-a8c3-18699ff1b153, EntityAlreadyExists: Role with name tf-eks-cluster-iam-r                                                             ole already exists.
 │
 │   with aws_iam_role.tf_eks_cluster_iam_role,
 │   on ✏️eks_cluster.tf line 33, in resource "aws_iam_role" "tf_eks_cluster_iam_role":
@@ -159,7 +159,7 @@ aws_route53_record.tf_rds_endpoint: Creation complete after 20s [id=Z03639973SS2
 │
 ╵
 ╷
-│ Error: creating IAM Role (tf-eks-managed-node-role): operation error IAM: CreateRole, https response error StatusCode: 409, RequestID: a5405e0d-de58-484a-8f60-a26a0b8f86e6, EntityAlreadyExists: Role with name tf-eks-managed-node-role already exists.
+│ Error: creating IAM Role (tf-eks-managed-node-role): operation error IAM: CreateRole, https response error Status                                                             Code: 409, RequestID: a5405e0d-de58-484a-8f60-a26a0b8f86e6, EntityAlreadyExists: Role with name tf-eks-managed-node                                                             -role already exists.
 │
 │   with aws_iam_role.tf_eks_managed_node_group_iam_role,
 │   on ✏️eks_nodegroup.tf line 88, in resource "aws_iam_role" "tf_eks_managed_node_group_iam_role":
@@ -200,7 +200,7 @@ aws_route.tf_pri_route_nat: Refreshing state... [id=r-rtb-0c83872dbf4ba09b210802
 aws_db_instance.tf_rds: Refreshing state... [id=db-XMTPLPRWXLIS3IGXTVLQL5YB2Q]
 aws_route53_record.tf_rds_endpoint: Refreshing state... [id=Z03639973SS2Z1M1XJDQ5_rds.tf.private.com_CNAME]
 
-Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
 
 Terraform will perform the following actions:
@@ -364,8 +364,8 @@ Terraform will perform the following actions:
       + role       = "tf-eks-cluster-iam-role"
     }
 
-  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly will be crea
-  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly"
+  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly will be created
+  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly" {
       + id         = (known after apply)
       + policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
       + role       = "tf-eks-managed-node-role"
@@ -450,10 +450,10 @@ aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2Contain
 aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy: Creating...
 aws_iam_role.tf_eks_cluster_iam_role: Creation complete after 2s [id=tf-eks-cluster-iam-role]
 aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy: Creating...
-aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy: Creation complete after 0s [i
-aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly: Creation comple000002]
-aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy: Creation complete after
-aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy: Creation complete after 0s [id=tf-eks-
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy: Creation complete after 0s [id=tf-eks-managed-node-role-20250219074933968800000001]
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly: Creation complete after 0s [id=tf-eks-managed-node-role-20250219074933971400000002]
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy: Creation complete after 0s [id=tf-eks-managed-node-role-20250219074934213500000003]
+aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy: Creation complete after 0s [id=tf-eks-cluster-iam-role-20250219074934213700000004]
 aws_eks_cluster.tf_eks_cluster: Creating...
 aws_eks_cluster.tf_eks_cluster: Still creating... [10s elapsed]
 aws_eks_cluster.tf_eks_cluster: Still creating... [20s elapsed]
@@ -527,11 +527,11 @@ aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m40s elapsed]
 aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m50s elapsed]
 aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m0s elapsed]
 aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Creation complete after 3m20s [id=tf-eks-cluster:tf-eks-managed-node-group]
+aws_eks_node_group.tf_eks_managed_node_group: Creation complete after 3m20s [id=tf-eks-cluster:tf-eks-managed-node-                                                             group]
 
 Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-bastion_public_ip = "xxxxxx"
+bastion_public_ip = "43.202.66.182"
 rds_endpoint = "rds.tf.private.com"
