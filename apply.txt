@@ -1,388 +1,537 @@
 tls_private_key.tf_bastion_key: Creating...
-tls_private_key.tf_bastion_key: Creation complete after 0s [id=669d93948973ca7c4d8257c3400618a03789b45a]
-local_file.tf_bastion_private_key: Creating...
-local_file.tf_bastion_private_key: Creation complete after 0s [id=6786276266742e7e3162e4026f09e3602506b3aa]
-aws_iam_role.tf_eks_cluster_iam_role: Creating...
 aws_eip.tf_eip: Creating...
 aws_vpc.tf_vpc: Creating...
-aws_key_pair.tf_bastion_key: Creating...
+aws_iam_role.tf_eks_cluster_iam_role: Creating...
 aws_iam_role.tf_eks_managed_node_group_iam_role: Creating...
-aws_key_pair.tf_bastion_key: Creation complete after 0s [id=tf-bastion-key]
-aws_eip.tf_eip: Creation complete after 0s [id=eipalloc-0b8c939bfe48387e9]
-aws_iam_role.tf_eks_cluster_iam_role: Creation complete after 1s [id=tf-eks-cluster-iam-role]
-aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy: Creating...
-aws_iam_role.tf_eks_managed_node_group_iam_role: Creation complete after 1s [id=tf-eks-managed-node-role]
-aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly: Creating...
-aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy: Creating...
-aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy: Creating...
-aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy: Creation complete after 1s [id=tf-eks-                                                             cluster-iam-role-20250219053605659000000001]
-aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly: Creation comple                                                             te after 1s [id=tf-eks-managed-node-role-20250219053605678900000002]
-aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy: Creation complete after 1s [i                                                             d=tf-eks-managed-node-role-20250219053605926800000004]
-aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy: Creation complete after                                                              1s [id=tf-eks-managed-node-role-20250219053605914700000003]
+tls_private_key.tf_bastion_key: Creation complete after 0s [id=bbf45a3353719ad8114b87cfe1e2e86a29ceab81]
+aws_key_pair.tf_bastion_key: Creating...
+local_file.tf_bastion_private_key: Creating...
+local_file.tf_bastion_private_key: Creation complete after 0s [id=12929b87061f0ddc8ac7b25ca8009f7e5c352073]
+aws_key_pair.tf_bastion_key: Creation complete after 1s [id=tf-bastion-key]
+aws_eip.tf_eip: Creation complete after 1s [id=eipalloc-000f1da8cbe626e9e]
 aws_vpc.tf_vpc: Still creating... [10s elapsed]
-aws_vpc.tf_vpc: Creation complete after 11s [id=vpc-0f1c9c22050d45a24]
-aws_subnet.tf_pri_sub_1: Creating...
-aws_security_group.tf_bastion_sg: Creating...
-aws_subnet.tf_pub_sub_1: Creating...
-aws_internet_gateway.tf_igw: Creating...
+aws_vpc.tf_vpc: Creation complete after 12s [id=vpc-02b58162fba555027]
 aws_route53_zone.tf_route53_private: Creating...
-aws_subnet.tf_rds_sub_1: Creating...
-aws_route_table.tf_pri_rtb: Creating...
+aws_security_group.tf_bastion_sg: Creating...
 aws_subnet.tf_pub_sub_2: Creating...
 aws_subnet.tf_rds_sub_2: Creating...
-aws_subnet.tf_pri_sub_2: Creating...
-aws_subnet.tf_pri_sub_1: Creation complete after 1s [id=subnet-000a30d3e3c428719]
+aws_subnet.tf_pri_sub_1: Creating...
+aws_internet_gateway.tf_igw: Creating...
+aws_subnet.tf_pub_sub_1: Creating...
 aws_route_table.tf_pub_rtb: Creating...
-aws_internet_gateway.tf_igw: Creation complete after 1s [id=igw-03c13d0a657a13b63]
-aws_route_table.tf_pri_rtb: Creation complete after 1s [id=rtb-0debd4acf83a4bd2f]
+aws_route_table.tf_pri_rtb: Creating...
+aws_subnet.tf_rds_sub_1: Creating...
+aws_internet_gateway.tf_igw: Creation complete after 0s [id=igw-03f7232959a5916d0]
+aws_subnet.tf_pri_sub_2: Creating...
+aws_route_table.tf_pri_rtb: Creation complete after 0s [id=rtb-0c83872dbf4ba09b2]
+aws_subnet.tf_pri_sub_1: Creation complete after 0s [id=subnet-0baaa3bb6c807f28d]
 aws_route_table_association.tf_pri_sub_1_association: Creating...
-aws_route_table_association.tf_pri_sub_1_association: Creation complete after 0s [id=rtbassoc-060b8595c66497c89]
-aws_route_table.tf_pub_rtb: Creation complete after 0s [id=rtb-0c5138b182fe72de1]
+aws_route_table.tf_pub_rtb: Creation complete after 0s [id=rtb-0caeebcfd960b14fa]
 aws_route.tf_pub_route_igw: Creating...
-aws_route.tf_pub_route_igw: Creation complete after 1s [id=r-rtb-0c5138b182fe72de11080289494]
-aws_security_group.tf_bastion_sg: Creation complete after 2s [id=sg-04c47afadbcd3805a]
-aws_security_group.tf_eks_cluster_sg: Creating...
-aws_security_group.tf_rds_sg: Creating...
-aws_subnet.tf_pri_sub_2: Creation complete after 2s [id=subnet-01b777ceb6cf2f8c1]
+aws_route_table_association.tf_pri_sub_1_association: Creation complete after 0s [id=rtbassoc-096bdc77893f0e63f]
+aws_subnet.tf_pri_sub_2: Creation complete after 0s [id=subnet-0f44c067482f341c8]
 aws_route_table_association.tf_pri_sub_2_association: Creating...
-aws_route_table_association.tf_pri_sub_2_association: Creation complete after 0s [id=rtbassoc-050156db8e1f473f6]
-aws_subnet.tf_rds_sub_1: Creation complete after 2s [id=subnet-0a9abe54bf6af5eba]
+aws_route.tf_pub_route_igw: Creation complete after 0s [id=r-rtb-0caeebcfd960b14fa1080289494]
+aws_route_table_association.tf_pri_sub_2_association: Creation complete after 1s [id=rtbassoc-0e175dffb2a6c235a]
+aws_security_group.tf_bastion_sg: Creation complete after 1s [id=sg-000afefee9fce7f5b]
+aws_security_group.tf_rds_sg: Creating...
+aws_security_group.tf_eks_cluster_sg: Creating...
+aws_subnet.tf_rds_sub_1: Creation complete after 1s [id=subnet-0b157dfb5a9cb700b]
 aws_route_table_association.tf_rds_sub_1_association: Creating...
-aws_route_table_association.tf_rds_sub_1_association: Creation complete after 1s [id=rtbassoc-0cd5ba66e2c80cfc7]
-aws_subnet.tf_rds_sub_2: Creation complete after 3s [id=subnet-071c65649616f4737]
+aws_subnet.tf_rds_sub_2: Creation complete after 2s [id=subnet-0d0b25dbde1454b3f]
 aws_route_table_association.tf_rds_sub_2_association: Creating...
 aws_db_subnet_group.tf_rds_subnet_group: Creating...
-aws_route_table_association.tf_rds_sub_2_association: Creation complete after 0s [id=rtbassoc-0775c91b7fd95bdfb]
-aws_security_group.tf_eks_cluster_sg: Creation complete after 1s [id=sg-05425f23bce179c48]
-aws_eks_cluster.tf_eks_cluster: Creating...
-aws_security_group.tf_rds_sg: Creation complete after 1s [id=sg-0208921352b3920b8]
-aws_security_group.tf_eks_node_group_sg: Creating...
+aws_route_table_association.tf_rds_sub_1_association: Creation complete after 1s [id=rtbassoc-0ddf5853245c8b886]
+aws_route_table_association.tf_rds_sub_2_association: Creation complete after 0s [id=rtbassoc-023920d5a997e2c44]
 aws_db_subnet_group.tf_rds_subnet_group: Creation complete after 1s [id=tf-rds-subnet-group]
+aws_security_group.tf_rds_sg: Creation complete after 2s [id=sg-0e3606b2a98e3814d]
 aws_db_instance.tf_rds: Creating...
-aws_security_group.tf_eks_node_group_sg: Creation complete after 2s [id=sg-060c249ae049fd7bc]
-aws_launch_template.tf_eks_node_lt: Creating...
-aws_subnet.tf_pub_sub_1: Still creating... [10s elapsed]
-aws_route53_zone.tf_route53_private: Still creating... [10s elapsed]
+aws_security_group.tf_eks_cluster_sg: Creation complete after 2s [id=sg-00c0a645e09ea0571]
+aws_security_group.tf_eks_node_group_sg: Creating...
+aws_security_group.tf_eks_node_group_sg: Creation complete after 1s [id=sg-096be7bfde0ffa3e0]
 aws_subnet.tf_pub_sub_2: Still creating... [10s elapsed]
-aws_launch_template.tf_eks_node_lt: Creation complete after 5s [id=lt-082e329f6d979b6f2]
-aws_subnet.tf_pub_sub_2: Creation complete after 11s [id=subnet-0f79ba7c2858b52bb]
-aws_route_table_association.tf_pub_sub_2_association: Creating...
-aws_nat_gateway.tf_nat: Creating...
-aws_route_table_association.tf_pub_sub_2_association: Creation complete after 0s [id=rtbassoc-00126e5c41a92e0c8]
-aws_subnet.tf_pub_sub_1: Creation complete after 13s [id=subnet-0217f5707c99c9096]
+aws_route53_zone.tf_route53_private: Still creating... [10s elapsed]
+aws_subnet.tf_pub_sub_1: Still creating... [10s elapsed]
+aws_subnet.tf_pub_sub_1: Creation complete after 10s [id=subnet-0d2781975e80fe497]
 aws_route_table_association.tf_pub_sub_1_association: Creating...
 aws_instance.tf_bastion: Creating...
-aws_route_table_association.tf_pub_sub_1_association: Creation complete after 0s [id=rtbassoc-07b2f803ac535796f]
-aws_eks_cluster.tf_eks_cluster: Still creating... [10s elapsed]
+aws_route_table_association.tf_pub_sub_1_association: Creation complete after 1s [id=rtbassoc-0c86031281e19ff94]
+aws_subnet.tf_pub_sub_2: Creation complete after 12s [id=subnet-0b120d75c24cf809a]
+aws_route_table_association.tf_pub_sub_2_association: Creating...
+aws_nat_gateway.tf_nat: Creating...
+aws_route_table_association.tf_pub_sub_2_association: Creation complete after 0s [id=rtbassoc-00cfcfde4cf9e54bd]
 aws_db_instance.tf_rds: Still creating... [10s elapsed]
 aws_route53_zone.tf_route53_private: Still creating... [20s elapsed]
-aws_nat_gateway.tf_nat: Still creating... [10s elapsed]
 aws_instance.tf_bastion: Still creating... [10s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [20s elapsed]
+aws_nat_gateway.tf_nat: Still creating... [10s elapsed]
+aws_instance.tf_bastion: Creation complete after 12s [id=i-0a928a01b3259f526]
 aws_db_instance.tf_rds: Still creating... [20s elapsed]
-aws_instance.tf_bastion: Creation complete after 12s [id=i-077cdd21549d46339]
 aws_route53_zone.tf_route53_private: Still creating... [30s elapsed]
 aws_nat_gateway.tf_nat: Still creating... [20s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [30s elapsed]
 aws_db_instance.tf_rds: Still creating... [30s elapsed]
 aws_route53_zone.tf_route53_private: Still creating... [40s elapsed]
 aws_nat_gateway.tf_nat: Still creating... [30s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [40s elapsed]
 aws_db_instance.tf_rds: Still creating... [40s elapsed]
 aws_route53_zone.tf_route53_private: Still creating... [50s elapsed]
 aws_nat_gateway.tf_nat: Still creating... [40s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [50s elapsed]
 aws_db_instance.tf_rds: Still creating... [50s elapsed]
-aws_route53_zone.tf_route53_private: Creation complete after 55s [id=Z00054373ECGADMAUNUW]
+aws_route53_zone.tf_route53_private: Creation complete after 58s [id=Z03639973SS2Z1M1XJDQ5]
 aws_nat_gateway.tf_nat: Still creating... [50s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [1m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [1m0s elapsed]
 aws_nat_gateway.tf_nat: Still creating... [1m0s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [1m10s elapsed]
 aws_db_instance.tf_rds: Still creating... [1m10s elapsed]
 aws_nat_gateway.tf_nat: Still creating... [1m10s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [1m20s elapsed]
 aws_db_instance.tf_rds: Still creating... [1m20s elapsed]
 aws_nat_gateway.tf_nat: Still creating... [1m20s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [1m30s elapsed]
 aws_db_instance.tf_rds: Still creating... [1m30s elapsed]
 aws_nat_gateway.tf_nat: Still creating... [1m30s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [1m40s elapsed]
 aws_db_instance.tf_rds: Still creating... [1m40s elapsed]
 aws_nat_gateway.tf_nat: Still creating... [1m40s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [1m50s elapsed]
 aws_db_instance.tf_rds: Still creating... [1m50s elapsed]
 aws_nat_gateway.tf_nat: Still creating... [1m50s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [2m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [2m0s elapsed]
-aws_nat_gateway.tf_nat: Still creating... [2m0s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [2m10s elapsed]
-aws_db_instance.tf_rds: Still creating... [2m10s elapsed]
-aws_nat_gateway.tf_nat: Still creating... [2m10s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [2m20s elapsed]
-aws_db_instance.tf_rds: Still creating... [2m20s elapsed]
-aws_nat_gateway.tf_nat: Creation complete after 2m14s [id=nat-07e5e3993145b7cff]
+aws_nat_gateway.tf_nat: Creation complete after 1m54s [id=nat-079a9f7ecb832d173]
 aws_route.tf_pri_route_nat: Creating...
-aws_route.tf_pri_route_nat: Creation complete after 1s [id=r-rtb-0debd4acf83a4bd2f1080289494]
-aws_eks_cluster.tf_eks_cluster: Still creating... [2m30s elapsed]
+aws_route.tf_pri_route_nat: Creation complete after 1s [id=r-rtb-0c83872dbf4ba09b21080289494]
+aws_db_instance.tf_rds: Still creating... [2m10s elapsed]
+aws_db_instance.tf_rds: Still creating... [2m20s elapsed]
 aws_db_instance.tf_rds: Still creating... [2m30s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [2m40s elapsed]
 aws_db_instance.tf_rds: Still creating... [2m40s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [2m50s elapsed]
 aws_db_instance.tf_rds: Still creating... [2m50s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [3m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [3m0s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [3m10s elapsed]
 aws_db_instance.tf_rds: Still creating... [3m10s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [3m20s elapsed]
 aws_db_instance.tf_rds: Still creating... [3m20s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [3m30s elapsed]
 aws_db_instance.tf_rds: Still creating... [3m30s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [3m40s elapsed]
 aws_db_instance.tf_rds: Still creating... [3m40s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [3m50s elapsed]
 aws_db_instance.tf_rds: Still creating... [3m50s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [4m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [4m0s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [4m10s elapsed]
 aws_db_instance.tf_rds: Still creating... [4m10s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [4m20s elapsed]
 aws_db_instance.tf_rds: Still creating... [4m20s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [4m30s elapsed]
 aws_db_instance.tf_rds: Still creating... [4m30s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [4m40s elapsed]
 aws_db_instance.tf_rds: Still creating... [4m40s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [4m50s elapsed]
 aws_db_instance.tf_rds: Still creating... [4m50s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [5m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [5m0s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [5m10s elapsed]
 aws_db_instance.tf_rds: Still creating... [5m10s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [5m20s elapsed]
 aws_db_instance.tf_rds: Still creating... [5m20s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [5m30s elapsed]
 aws_db_instance.tf_rds: Still creating... [5m30s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [5m40s elapsed]
 aws_db_instance.tf_rds: Still creating... [5m40s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [5m50s elapsed]
 aws_db_instance.tf_rds: Still creating... [5m50s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [6m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [6m0s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [6m10s elapsed]
 aws_db_instance.tf_rds: Still creating... [6m10s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [6m20s elapsed]
 aws_db_instance.tf_rds: Still creating... [6m20s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [6m30s elapsed]
 aws_db_instance.tf_rds: Still creating... [6m30s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [6m40s elapsed]
 aws_db_instance.tf_rds: Still creating... [6m40s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [6m50s elapsed]
 aws_db_instance.tf_rds: Still creating... [6m50s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [7m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [7m0s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [7m10s elapsed]
 aws_db_instance.tf_rds: Still creating... [7m10s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [7m20s elapsed]
 aws_db_instance.tf_rds: Still creating... [7m20s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [7m30s elapsed]
 aws_db_instance.tf_rds: Still creating... [7m30s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [7m40s elapsed]
 aws_db_instance.tf_rds: Still creating... [7m40s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [7m50s elapsed]
 aws_db_instance.tf_rds: Still creating... [7m50s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [8m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [8m0s elapsed]
-aws_eks_cluster.tf_eks_cluster: Still creating... [8m10s elapsed]
 aws_db_instance.tf_rds: Still creating... [8m10s elapsed]
-aws_eks_cluster.tf_eks_cluster: Creation complete after 8m12s [id=tf-eks-cluster]
-aws_eks_node_group.tf_eks_managed_node_group: Creating...
 aws_db_instance.tf_rds: Still creating... [8m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [10s elapsed]
 aws_db_instance.tf_rds: Still creating... [8m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [20s elapsed]
 aws_db_instance.tf_rds: Still creating... [8m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [30s elapsed]
 aws_db_instance.tf_rds: Still creating... [8m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [40s elapsed]
 aws_db_instance.tf_rds: Still creating... [9m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [50s elapsed]
 aws_db_instance.tf_rds: Still creating... [9m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [9m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m10s elapsed]
 aws_db_instance.tf_rds: Still creating... [9m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m20s elapsed]
 aws_db_instance.tf_rds: Still creating... [9m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m30s elapsed]
 aws_db_instance.tf_rds: Still creating... [9m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m40s elapsed]
 aws_db_instance.tf_rds: Still creating... [10m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m50s elapsed]
 aws_db_instance.tf_rds: Still creating... [10m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m0s elapsed]
 aws_db_instance.tf_rds: Still creating... [10m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m10s elapsed]
 aws_db_instance.tf_rds: Still creating... [10m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m20s elapsed]
 aws_db_instance.tf_rds: Still creating... [10m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m30s elapsed]
-aws_db_instance.tf_rds: Still creating... [10m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m40s elapsed]
-aws_db_instance.tf_rds: Still creating... [11m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m50s elapsed]
-aws_db_instance.tf_rds: Still creating... [11m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m0s elapsed]
-aws_db_instance.tf_rds: Still creating... [11m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m10s elapsed]
-aws_db_instance.tf_rds: Still creating... [11m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m20s elapsed]
-aws_db_instance.tf_rds: Still creating... [11m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m30s elapsed]
-aws_db_instance.tf_rds: Still creating... [11m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m40s elapsed]
-aws_db_instance.tf_rds: Still creating... [12m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m50s elapsed]
-aws_db_instance.tf_rds: Still creating... [12m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [4m0s elapsed]
-aws_db_instance.tf_rds: Still creating... [12m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [4m10s elapsed]
-aws_db_instance.tf_rds: Still creating... [12m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [4m20s elapsed]
-aws_db_instance.tf_rds: Still creating... [12m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [4m30s elapsed]
-aws_db_instance.tf_rds: Still creating... [12m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [4m40s elapsed]
-aws_db_instance.tf_rds: Still creating... [13m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [4m50s elapsed]
-aws_db_instance.tf_rds: Still creating... [13m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [5m0s elapsed]
-aws_db_instance.tf_rds: Creation complete after 13m13s [id=db-63BROOCFEPSOLICYTRNSH53EQY]
+aws_db_instance.tf_rds: Creation complete after 10m41s [id=db-XMTPLPRWXLIS3IGXTVLQL5YB2Q]
 aws_route53_record.tf_rds_endpoint: Creating...
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [5m10s elapsed]
 aws_route53_record.tf_rds_endpoint: Still creating... [10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [5m20s elapsed]
-aws_route53_record.tf_rds_endpoint: Creation complete after 18s [id=Z00054373ECGADMAUNUW_rds.tf.private.com_CNAME]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [5m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [5m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [5m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [6m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [6m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [6m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [6m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [6m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [6m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [7m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [7m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [7m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [7m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [7m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [7m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [8m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [8m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [8m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [8m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [8m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [8m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [9m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [9m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [9m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [9m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [9m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [9m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [10m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [10m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [10m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [10m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [10m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [10m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [11m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [11m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [11m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [11m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [11m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [11m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [12m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [12m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [12m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [12m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [12m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [12m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [13m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [13m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [13m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [13m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [13m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [13m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [14m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [14m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [14m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [14m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [14m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [14m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [15m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [15m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [15m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [15m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [15m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [15m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [16m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [16m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [16m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [16m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [16m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [16m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [17m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [17m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [17m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [17m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [17m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [17m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [18m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [18m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [18m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [18m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [18m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [18m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [19m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [19m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [19m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [19m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [19m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [19m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [20m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [20m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [20m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [20m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [20m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [20m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [21m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [21m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [21m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [21m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [21m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [21m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [22m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [22m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [22m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [22m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [22m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [22m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [23m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [23m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [23m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [23m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [23m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [23m50s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [24m0s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [24m10s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [24m20s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [24m30s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [24m40s elapsed]
-aws_eks_node_group.tf_eks_managed_node_group: Still creating... [24m50s elapsed]
+aws_route53_record.tf_rds_endpoint: Still creating... [20s elapsed]
+aws_route53_record.tf_rds_endpoint: Creation complete after 20s [id=Z03639973SS2Z1M1XJDQ5_rds.tf.private.com_CNAME]
 ╷
-│ Error: waiting for EKS Node Group (tf-eks-cluster:tf-eks-managed-node-group) create: unexpected state 'CREATE_FAI                                                             LED', wanted target 'ACTIVE'. last error: i-05ae295214c84555a, i-0a1d825901332fcac, i-0e1e720fc94703989: NodeCreati                                                             onFailure: Instances failed to join the kubernetes cluster
+│ Error: creating IAM Role (tf-eks-cluster-iam-role): operation error IAM: CreateRole, https response error StatusCode: 409, RequestID: 743400a4-1c8a-4c6a-a8c3-18699ff1b153, EntityAlreadyExists: Role with name tf-eks-cluster-iam-role already exists.
 │
-│   with aws_eks_node_group.tf_eks_managed_node_group,
-│   on ✏️eks_nodegroup.tf line 50, in resource "aws_eks_node_group" "tf_eks_managed_node_group":
-│   50: resource "aws_eks_node_group" "tf_eks_managed_node_group" {
+│   with aws_iam_role.tf_eks_cluster_iam_role,
+│   on ✏️eks_cluster.tf line 33, in resource "aws_iam_role" "tf_eks_cluster_iam_role":
+│   33: resource "aws_iam_role" "tf_eks_cluster_iam_role" {
 │
+╵
+╷
+│ Error: creating IAM Role (tf-eks-managed-node-role): operation error IAM: CreateRole, https response error StatusCode: 409, RequestID: a5405e0d-de58-484a-8f60-a26a0b8f86e6, EntityAlreadyExists: Role with name tf-eks-managed-node-role already exists.
+│
+│   with aws_iam_role.tf_eks_managed_node_group_iam_role,
+│   on ✏️eks_nodegroup.tf line 88, in resource "aws_iam_role" "tf_eks_managed_node_group_iam_role":
+│   88: resource "aws_iam_role" "tf_eks_managed_node_group_iam_role" {
+│
+╵
+[terraform@ip-192-168-10-138 terraform-aws]$ terraform apply --auto-approve
+tls_private_key.tf_bastion_key: Refreshing state... [id=bbf45a3353719ad8114b87cfe1e2e86a29ceab81]
+local_file.tf_bastion_private_key: Refreshing state... [id=12929b87061f0ddc8ac7b25ca8009f7e5c352073]
+aws_key_pair.tf_bastion_key: Refreshing state... [id=tf-bastion-key]
+aws_eip.tf_eip: Refreshing state... [id=eipalloc-000f1da8cbe626e9e]
+aws_vpc.tf_vpc: Refreshing state... [id=vpc-02b58162fba555027]
+aws_subnet.tf_pri_sub_2: Refreshing state... [id=subnet-0f44c067482f341c8]
+aws_route53_zone.tf_route53_private: Refreshing state... [id=Z03639973SS2Z1M1XJDQ5]
+aws_security_group.tf_bastion_sg: Refreshing state... [id=sg-000afefee9fce7f5b]
+aws_internet_gateway.tf_igw: Refreshing state... [id=igw-03f7232959a5916d0]
+aws_subnet.tf_pub_sub_2: Refreshing state... [id=subnet-0b120d75c24cf809a]
+aws_subnet.tf_rds_sub_1: Refreshing state... [id=subnet-0b157dfb5a9cb700b]
+aws_route_table.tf_pub_rtb: Refreshing state... [id=rtb-0caeebcfd960b14fa]
+aws_subnet.tf_pub_sub_1: Refreshing state... [id=subnet-0d2781975e80fe497]
+aws_subnet.tf_pri_sub_1: Refreshing state... [id=subnet-0baaa3bb6c807f28d]
+aws_subnet.tf_rds_sub_2: Refreshing state... [id=subnet-0d0b25dbde1454b3f]
+aws_route_table.tf_pri_rtb: Refreshing state... [id=rtb-0c83872dbf4ba09b2]
+aws_security_group.tf_eks_cluster_sg: Refreshing state... [id=sg-00c0a645e09ea0571]
+aws_security_group.tf_rds_sg: Refreshing state... [id=sg-0e3606b2a98e3814d]
+aws_route.tf_pub_route_igw: Refreshing state... [id=r-rtb-0caeebcfd960b14fa1080289494]
+aws_route_table_association.tf_pri_sub_2_association: Refreshing state... [id=rtbassoc-0e175dffb2a6c235a]
+aws_instance.tf_bastion: Refreshing state... [id=i-0a928a01b3259f526]
+aws_route_table_association.tf_pub_sub_1_association: Refreshing state... [id=rtbassoc-0c86031281e19ff94]
+aws_route_table_association.tf_rds_sub_2_association: Refreshing state... [id=rtbassoc-023920d5a997e2c44]
+aws_route_table_association.tf_rds_sub_1_association: Refreshing state... [id=rtbassoc-0ddf5853245c8b886]
+aws_db_subnet_group.tf_rds_subnet_group: Refreshing state... [id=tf-rds-subnet-group]
+aws_nat_gateway.tf_nat: Refreshing state... [id=nat-079a9f7ecb832d173]
+aws_route_table_association.tf_pub_sub_2_association: Refreshing state... [id=rtbassoc-00cfcfde4cf9e54bd]
+aws_route_table_association.tf_pri_sub_1_association: Refreshing state... [id=rtbassoc-096bdc77893f0e63f]
+aws_security_group.tf_eks_node_group_sg: Refreshing state... [id=sg-096be7bfde0ffa3e0]
+aws_route.tf_pri_route_nat: Refreshing state... [id=r-rtb-0c83872dbf4ba09b21080289494]
+aws_db_instance.tf_rds: Refreshing state... [id=db-XMTPLPRWXLIS3IGXTVLQL5YB2Q]
+aws_route53_record.tf_rds_endpoint: Refreshing state... [id=Z03639973SS2Z1M1XJDQ5_rds.tf.private.com_CNAME]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_eks_cluster.tf_eks_cluster will be created
+  + resource "aws_eks_cluster" "tf_eks_cluster" {
+      + arn                           = (known after apply)
+      + bootstrap_self_managed_addons = true
+      + certificate_authority         = (known after apply)
+      + cluster_id                    = (known after apply)
+      + created_at                    = (known after apply)
+      + endpoint                      = (known after apply)
+      + id                            = (known after apply)
+      + identity                      = (known after apply)
+      + name                          = "tf-eks-cluster"
+      + platform_version              = (known after apply)
+      + role_arn                      = (known after apply)
+      + status                        = (known after apply)
+      + tags                          = {
+          + "Name" = "tf_eks_cluster"
+        }
+      + tags_all                      = {
+          + "Name" = "tf_eks_cluster"
+        }
+      + version                       = "1.31"
+
+      + access_config (known after apply)
+
+      + kubernetes_network_config (known after apply)
+
+      + upgrade_policy (known after apply)
+
+      + vpc_config {
+          + cluster_security_group_id = (known after apply)
+          + endpoint_private_access   = true
+          + endpoint_public_access    = false
+          + public_access_cidrs       = (known after apply)
+          + security_group_ids        = [
+              + "sg-00c0a645e09ea0571",
+            ]
+          + subnet_ids                = [
+              + "subnet-0baaa3bb6c807f28d",
+              + "subnet-0f44c067482f341c8",
+            ]
+          + vpc_id                    = (known after apply)
+        }
+    }
+
+  # aws_eks_node_group.tf_eks_managed_node_group will be created
+  + resource "aws_eks_node_group" "tf_eks_managed_node_group" {
+      + ami_type               = (known after apply)
+      + arn                    = (known after apply)
+      + capacity_type          = "ON_DEMAND"
+      + cluster_name           = "tf-eks-cluster"
+      + disk_size              = (known after apply)
+      + id                     = (known after apply)
+      + instance_types         = (known after apply)
+      + node_group_name        = "tf-eks-managed-node-group"
+      + node_group_name_prefix = (known after apply)
+      + node_role_arn          = (known after apply)
+      + release_version        = (known after apply)
+      + resources              = (known after apply)
+      + status                 = (known after apply)
+      + subnet_ids             = [
+          + "subnet-0baaa3bb6c807f28d",
+          + "subnet-0f44c067482f341c8",
+        ]
+      + tags                   = {
+          + "Name" = "tf_eks_managed_node_group"
+        }
+      + tags_all               = {
+          + "Name" = "tf_eks_managed_node_group"
+        }
+      + version                = (known after apply)
+
+      + launch_template {
+          + id      = (known after apply)
+          + name    = (known after apply)
+          + version = "$Latest"
+        }
+
+      + node_repair_config (known after apply)
+
+      + scaling_config {
+          + desired_size = 2
+          + max_size     = 3
+          + min_size     = 2
+        }
+
+      + update_config {
+          + max_unavailable = 1
+        }
+    }
+
+  # aws_iam_role.tf_eks_cluster_iam_role will be created
+  + resource "aws_iam_role" "tf_eks_cluster_iam_role" {
+      + arn                   = (known after apply)
+      + assume_role_policy    = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action    = "sts:AssumeRole"
+                      + Effect    = "Allow"
+                      + Principal = {
+                          + Service = "eks.amazonaws.com"
+                        }
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+      + create_date           = (known after apply)
+      + force_detach_policies = false
+      + id                    = (known after apply)
+      + managed_policy_arns   = (known after apply)
+      + max_session_duration  = 3600
+      + name                  = "tf-eks-cluster-iam-role"
+      + name_prefix           = (known after apply)
+      + path                  = "/"
+      + tags_all              = (known after apply)
+      + unique_id             = (known after apply)
+
+      + inline_policy (known after apply)
+    }
+
+  # aws_iam_role.tf_eks_managed_node_group_iam_role will be created
+  + resource "aws_iam_role" "tf_eks_managed_node_group_iam_role" {
+      + arn                   = (known after apply)
+      + assume_role_policy    = jsonencode(
+            {
+              + Statement = [
+                  + {
+                      + Action    = "sts:AssumeRole"
+                      + Effect    = "Allow"
+                      + Principal = {
+                          + Service = "ec2.amazonaws.com"
+                        }
+                    },
+                ]
+              + Version   = "2012-10-17"
+            }
+        )
+      + create_date           = (known after apply)
+      + force_detach_policies = false
+      + id                    = (known after apply)
+      + managed_policy_arns   = (known after apply)
+      + max_session_duration  = 3600
+      + name                  = "tf-eks-managed-node-role"
+      + name_prefix           = (known after apply)
+      + path                  = "/"
+      + tags_all              = (known after apply)
+      + unique_id             = (known after apply)
+
+      + inline_policy (known after apply)
+    }
+
+  # aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy will be created
+  + resource "aws_iam_role_policy_attachment" "tf_eks_cluster_policy_AmazonEKSClusterPolicy" {
+      + id         = (known after apply)
+      + policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+      + role       = "tf-eks-cluster-iam-role"
+    }
+
+  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly will be crea
+  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly"
+      + id         = (known after apply)
+      + policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+      + role       = "tf-eks-managed-node-role"
+    }
+
+  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy will be created
+  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy" {
+      + id         = (known after apply)
+      + policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+      + role       = "tf-eks-managed-node-role"
+    }
+
+  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy will be created
+  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy" {
+      + id         = (known after apply)
+      + policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+      + role       = "tf-eks-managed-node-role"
+    }
+
+  # aws_launch_template.tf_eks_node_lt will be created
+  + resource "aws_launch_template" "tf_eks_node_lt" {
+      + arn                    = (known after apply)
+      + default_version        = (known after apply)
+      + id                     = (known after apply)
+      + image_id               = "ami-0fa05db9e3c145f63"
+      + instance_type          = "t3.medium"
+      + latest_version         = (known after apply)
+      + name                   = (known after apply)
+      + name_prefix            = "tf-eks-node-lt"
+      + tags                   = {
+          + "Name"               = "tf_eks_node_lt"
+          + "eks:cluster-name"   = "tf-eks-cluster"
+          + "eks:nodegroup-name" = "tf-eks-managed-node-group"
+        }
+      + tags_all               = {
+          + "Name"               = "tf_eks_node_lt"
+          + "eks:cluster-name"   = "tf-eks-cluster"
+          + "eks:nodegroup-name" = "tf-eks-managed-node-group"
+        }
+      + user_data              = (known after apply)
+      + vpc_security_group_ids = [
+          + "sg-096be7bfde0ffa3e0",
+        ]
+
+      + block_device_mappings {
+          + device_name = "/dev/xvda"
+
+          + ebs {
+              + iops        = 3000
+              + throughput  = 125
+              + volume_size = 20
+              + volume_type = "gp3"
+            }
+        }
+
+      + metadata_options (known after apply)
+
+      + tag_specifications {
+          + resource_type = "instance"
+          + tags          = {
+              + "Name"               = "tf_eks_node_lt"
+              + "eks:cluster-name"   = "tf-eks-cluster"
+              + "eks:nodegroup-name" = "tf-eks-managed-node-group"
+            }
+        }
+      + tag_specifications {
+          + resource_type = "volume"
+          + tags          = {
+              + "Name"               = "tf_eks_node_lt"
+              + "eks:cluster-name"   = "tf-eks-cluster"
+              + "eks:nodegroup-name" = "tf-eks-managed-node-group"
+            }
+        }
+    }
+
+Plan: 9 to add, 0 to change, 0 to destroy.
+aws_iam_role.tf_eks_managed_node_group_iam_role: Creating...
+aws_iam_role.tf_eks_cluster_iam_role: Creating...
+aws_iam_role.tf_eks_managed_node_group_iam_role: Creation complete after 2s [id=tf-eks-managed-node-role]
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy: Creating...
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly: Creating...
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy: Creating...
+aws_iam_role.tf_eks_cluster_iam_role: Creation complete after 2s [id=tf-eks-cluster-iam-role]
+aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy: Creating...
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy: Creation complete after 0s [i
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly: Creation comple000002]
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy: Creation complete after
+aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy: Creation complete after 0s [id=tf-eks-
+aws_eks_cluster.tf_eks_cluster: Creating...
+aws_eks_cluster.tf_eks_cluster: Still creating... [10s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [20s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [30s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [40s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [50s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [1m0s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [1m10s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [1m20s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [1m30s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [1m40s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [1m50s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [2m0s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [2m10s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [2m20s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [2m30s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [2m40s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [2m51s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [3m1s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [3m11s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [3m21s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [3m31s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [3m41s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [3m51s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [4m1s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [4m11s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [4m21s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [4m31s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [4m41s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [4m51s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [5m1s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [5m11s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [5m21s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [5m31s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [5m41s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [5m51s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [6m1s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [6m11s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [6m21s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [6m31s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [6m41s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [6m51s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [7m1s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [7m11s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [7m21s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [7m31s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [7m41s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [7m51s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [8m1s elapsed]
+aws_eks_cluster.tf_eks_cluster: Still creating... [8m11s elapsed]
+aws_eks_cluster.tf_eks_cluster: Creation complete after 8m13s [id=tf-eks-cluster]
+aws_launch_template.tf_eks_node_lt: Creating...
+aws_launch_template.tf_eks_node_lt: Creation complete after 5s [id=lt-01b25e19bed0f0c22]
+aws_eks_node_group.tf_eks_managed_node_group: Creating...
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [10s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [20s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [30s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [40s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [50s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m0s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m10s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m20s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m30s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m40s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [1m50s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m0s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m10s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m20s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m30s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m40s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [2m50s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m0s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still creating... [3m10s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Creation complete after 3m20s [id=tf-eks-cluster:tf-eks-managed-node-group]
+
+Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+bastion_public_ip = "xxxxxx"
+rds_endpoint = "rds.tf.private.com"
