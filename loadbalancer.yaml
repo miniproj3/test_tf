@@ -2,8 +2,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: flask-service-loadbalancer
-    #annotations:
-    #  service.beta.kubernetes.io/aws-load-balancer-type: ""   # nlb 또는 alb
 spec:
   selector:
     app: flask
