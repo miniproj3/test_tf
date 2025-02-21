@@ -1,41 +1,40 @@
-
 [terraform@ip-192-168-10-138 terraform-aws]$ terraform apply --auto-approve
-module.eks_blueprints_addons.data.aws_eks_addon_version.this["vpc-cni"]: Readin                                                                                                               g...
-module.eks_blueprints_addons.module.karpenter.data.aws_partition.current[0]: Re                                                                                                               ading...
-module.eks_blueprints_addons.data.aws_eks_addon_version.this["coredns"]: Readin                                                                                                               g...
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["vpc-cni"]: Reading...
+module.eks_blueprints_addons.module.karpenter.data.aws_partition.current[0]: Reading...
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["coredns"]: Reading...
 module.eks_blueprints_addons.data.aws_caller_identity.current: Reading...
-module.eks_blueprints_addons.module.cert_manager.data.aws_caller_identity.curre                                                                                                               nt[0]: Reading...
-module.eks_blueprints_addons.data.aws_eks_addon_version.this["aws-ebs-csi-drive                                                                                                               r"]: Reading...
-module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_parti                                                                                                               tion.current[0]: Reading...
-module.eks_blueprints_addons.data.aws_eks_addon_version.this["kube-proxy"]: Rea                                                                                                               ding...
-module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_parti                                                                                                               tion.current[0]: Read complete after 0s [id=aws]
-module.eks_blueprints_addons.module.karpenter.data.aws_partition.current[0]: Re                                                                                                               ad complete after 0s [id=aws]
+module.eks_blueprints_addons.module.cert_manager.data.aws_caller_identity.current[0]: Reading...
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["aws-ebs-csi-driver"]: Reading...
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_partition.current[0]: Reading...
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["kube-proxy"]: Reading...
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.eks_blueprints_addons.module.karpenter.data.aws_partition.current[0]: Read complete after 0s [id=aws]
 module.eks_blueprints_addons.data.aws_region.current: Reading...
 module.eks_blueprints_addons.data.aws_partition.current: Reading...
-module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_calle                                                                                                               r_identity.current[0]: Reading...
-module.eks_blueprints_addons.module.cert_manager.data.aws_caller_identity.curre                                                                                                               nt[0]: Read complete after 0s [id=707677861059]
-module.eks_blueprints_addons.data.aws_partition.current: Read complete after 0s                                                                                                                [id=aws]
-module.eks_blueprints_addons.data.aws_region.current: Read complete after 0s [i                                                                                                               d=ap-northeast-2]
-module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter_assume_role                                                                                                               [0]: Reading...
-module.eks_blueprints_addons.data.aws_caller_identity.current: Read complete af                                                                                                               ter 0s [id=707677861059]
-module.eks_blueprints_addons.module.karpenter.data.aws_caller_identity.current[                                                                                                               0]: Reading...
-module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter_assume_role                                                                                                               [0]: Read complete after 0s [id=106987850]
-module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_calle                                                                                                               r_identity.current[0]: Read complete after 0s [id=707677861059]
-module.eks_blueprints_addons.module.cert_manager.data.aws_partition.current[0]:                                                                                                                Reading...
-module.eks_blueprints_addons.module.cert_manager.data.aws_partition.current[0]:                                                                                                                Read complete after 0s [id=aws]
-module.eks_blueprints_addons.module.karpenter.data.aws_caller_identity.current[                                                                                                               0]: Read complete after 0s [id=707677861059]
-module.eks_blueprints_addons.data.aws_iam_policy_document.aws_load_balancer_con                                                                                                               troller[0]: Reading...
-module.eks_blueprints_addons.data.aws_iam_policy_document.cert_manager[0]: Read                                                                                                               ing...
-module.eks_blueprints_addons.data.aws_iam_policy_document.cert_manager[0]: Read                                                                                                                complete after 0s [id=3416383923]
-module.eks_blueprints_addons.data.aws_iam_policy_document.aws_load_balancer_con                                                                                                               troller[0]: Read complete after 0s [id=1166930017]
-module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.t                                                                                                               his[0]: Reading...
-module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_p                                                                                                               olicy_document.this[0]: Reading...
-module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.t                                                                                                               his[0]: Read complete after 0s [id=3416383923]
-module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_p                                                                                                               olicy_document.this[0]: Read complete after 0s [id=1166930017]
-module.eks_blueprints_addons.data.aws_eks_addon_version.this["vpc-cni"]: Read c                                                                                                               omplete after 0s [id=vpc-cni]
-module.eks_blueprints_addons.data.aws_eks_addon_version.this["kube-proxy"]: Rea                                                                                                               d complete after 0s [id=kube-proxy]
-module.eks_blueprints_addons.data.aws_eks_addon_version.this["coredns"]: Read c                                                                                                               omplete after 0s [id=coredns]
-module.eks_blueprints_addons.data.aws_eks_addon_version.this["aws-ebs-csi-drive                                                                                                               r"]: Read complete after 0s [id=aws-ebs-csi-driver]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_caller_identity.current[0]: Reading...
+module.eks_blueprints_addons.module.cert_manager.data.aws_caller_identity.current[0]: Read complete after 0s [id=707677861059]
+module.eks_blueprints_addons.data.aws_partition.current: Read complete after 0s [id=aws]
+module.eks_blueprints_addons.data.aws_region.current: Read complete after 0s [id=ap-northeast-2]
+module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter_assume_role[0]: Reading...
+module.eks_blueprints_addons.data.aws_caller_identity.current: Read complete after 0s [id=707677861059]
+module.eks_blueprints_addons.module.karpenter.data.aws_caller_identity.current[0]: Reading...
+module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter_assume_role[0]: Read complete after 0s [id=106987850]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_caller_identity.current[0]: Read complete after 0s [id=707677861059]
+module.eks_blueprints_addons.module.cert_manager.data.aws_partition.current[0]: Reading...
+module.eks_blueprints_addons.module.cert_manager.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.eks_blueprints_addons.module.karpenter.data.aws_caller_identity.current[0]: Read complete after 0s [id=707677861059]
+module.eks_blueprints_addons.data.aws_iam_policy_document.aws_load_balancer_controller[0]: Reading...
+module.eks_blueprints_addons.data.aws_iam_policy_document.cert_manager[0]: Reading...
+module.eks_blueprints_addons.data.aws_iam_policy_document.cert_manager[0]: Read complete after 0s [id=3416383923]
+module.eks_blueprints_addons.data.aws_iam_policy_document.aws_load_balancer_controller[0]: Read complete after 0s [id=1166930017]
+module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.this[0]: Reading...
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.this[0]: Reading...
+module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=3416383923]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=1166930017]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["vpc-cni"]: Read complete after 0s [id=vpc-cni]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["kube-proxy"]: Read complete after 0s [id=kube-proxy]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["coredns"]: Read complete after 0s [id=coredns]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["aws-ebs-csi-driver"]: Read complete after 0s [id=aws-ebs-csi-driver]
 
 Terraform used the selected providers to generate the following execution
 plan. Resource actions are indicated with the following symbols:
@@ -315,29 +314,29 @@ Terraform will perform the following actions:
       + inline_policy (known after apply)
     }
 
-  # aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy                                                                                                                will be created
-  + resource "aws_iam_role_policy_attachment" "tf_eks_cluster_policy_AmazonEKSC                                                                                                               lusterPolicy" {
+  # aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy will be created
+  + resource "aws_iam_role_policy_attachment" "tf_eks_cluster_policy_AmazonEKSClusterPolicy" {
       + id         = (known after apply)
       + policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
       + role       = "tf-eks-cluster-iam-role"
     }
 
-  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2Co                                                                                                               ntainerRegistryReadOnly will be created
-  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy                                                                                                               _AmazonEC2ContainerRegistryReadOnly" {
+  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly will be created
+  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly" {
       + id         = (known after apply)
-      + policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnl                                                                                                               y"
+      + policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
       + role       = "tf-eks-managed-node-role"
     }
 
-  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWo                                                                                                               rkerNodePolicy will be created
-  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy                                                                                                               _AmazonEKSWorkerNodePolicy" {
+  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy will be created
+  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy" {
       + id         = (known after apply)
       + policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
       + role       = "tf-eks-managed-node-role"
     }
 
-  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_C                                                                                                               NI_Policy will be created
-  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy                                                                                                               _AmazonEKS_CNI_Policy" {
+  # aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy will be created
+  + resource "aws_iam_role_policy_attachment" "tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy" {
       + id         = (known after apply)
       + policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
       + role       = "tf-eks-managed-node-role"
@@ -738,7 +737,7 @@ Terraform will perform the following actions:
             },
           + {
               + cidr_blocks      = []
-              + description      = "Allow bastion to communicate with the clust                                                                                                               er API"
+              + description      = "Allow bastion to communicate with the cluster API"
               + from_port        = 443
               + ipv6_cidr_blocks = []
               + prefix_list_ids  = []
@@ -1170,7 +1169,7 @@ Terraform will perform the following actions:
       + rsa_bits                      = 2048
     }
 
-  # module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter[0] will                                                                                                                be read during apply
+  # module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter[0] will be read during apply
   # (config refers to values not yet known)
  <= data "aws_iam_policy_document" "karpenter" {
       + id                        = (known after apply)
@@ -1253,7 +1252,7 @@ Terraform will perform the following actions:
               + values   = [
                   + "*",
                 ]
-              + variable = "ec2:ResourceTag/kubernetes.io/cluster/tf-eks-cluste                                                                                                               r"
+              + variable = "ec2:ResourceTag/kubernetes.io/cluster/tf-eks-cluster"
             }
         }
       + statement {
@@ -1282,7 +1281,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.aws_cloudformation_stack.usage_telemetry[0] wi                                                                                                               ll be created
+  # module.eks_blueprints_addons.aws_cloudformation_stack.usage_telemetry[0] will be created
   + resource "aws_cloudformation_stack" "usage_telemetry" {
       + id            = (known after apply)
       + name          = (sensitive value)
@@ -1299,7 +1298,7 @@ Terraform will perform the following actions:
       + template_body = jsonencode(
             {
               + AWSTemplateFormatVersion = "2010-09-09"
-              + Description              = "Usage telemetry for EKS Blueprints.                                                                                                                (qs-1ubotj5kl)"
+              + Description              = "Usage telemetry for EKS Blueprints. (qs-1ubotj5kl)"
               + Resources                = {
                   + EmptyResource = {
                       + Type = "AWS::CloudFormation::WaitConditionHandle"
@@ -1309,7 +1308,7 @@ Terraform will perform the following actions:
         )
     }
 
-  # module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["health_ev                                                                                                               ent"] will be created
+  # module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["health_event"] will be created
   + resource "aws_cloudwatch_event_rule" "karpenter" {
       + arn            = (known after apply)
       + description    = "AWS health event"
@@ -1338,7 +1337,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["instance_                                                                                                               rebalance"] will be created
+  # module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["instance_rebalance"] will be created
   + resource "aws_cloudwatch_event_rule" "karpenter" {
       + arn            = (known after apply)
       + description    = "EC2 instance rebalance recommendation"
@@ -1367,7 +1366,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["instance_                                                                                                               state_change"] will be created
+  # module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["instance_state_change"] will be created
   + resource "aws_cloudwatch_event_rule" "karpenter" {
       + arn            = (known after apply)
       + description    = "EC2 instance state-change notification"
@@ -1396,7 +1395,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["spot_inte                                                                                                               rupt"] will be created
+  # module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["spot_interupt"] will be created
   + resource "aws_cloudwatch_event_rule" "karpenter" {
       + arn            = (known after apply)
       + description    = "EC2 spot instance interruption warning"
@@ -1425,7 +1424,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["health_                                                                                                               event"] will be created
+  # module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["health_event"] will be created
   + resource "aws_cloudwatch_event_target" "karpenter" {
       + arn            = (known after apply)
       + event_bus_name = "default"
@@ -1435,7 +1434,7 @@ Terraform will perform the following actions:
       + target_id      = "KarpenterQueueTarget"
     }
 
-  # module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["instanc                                                                                                               e_rebalance"] will be created
+  # module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["instance_rebalance"] will be created
   + resource "aws_cloudwatch_event_target" "karpenter" {
       + arn            = (known after apply)
       + event_bus_name = "default"
@@ -1445,7 +1444,7 @@ Terraform will perform the following actions:
       + target_id      = "KarpenterQueueTarget"
     }
 
-  # module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["instanc                                                                                                               e_state_change"] will be created
+  # module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["instance_state_change"] will be created
   + resource "aws_cloudwatch_event_target" "karpenter" {
       + arn            = (known after apply)
       + event_bus_name = "default"
@@ -1455,7 +1454,7 @@ Terraform will perform the following actions:
       + target_id      = "KarpenterQueueTarget"
     }
 
-  # module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["spot_in                                                                                                               terupt"] will be created
+  # module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["spot_interupt"] will be created
   + resource "aws_cloudwatch_event_target" "karpenter" {
       + arn            = (known after apply)
       + event_bus_name = "default"
@@ -1465,7 +1464,7 @@ Terraform will perform the following actions:
       + target_id      = "KarpenterQueueTarget"
     }
 
-  # module.eks_blueprints_addons.aws_eks_addon.this["aws-ebs-csi-driver"] will                                                                                                                be created
+  # module.eks_blueprints_addons.aws_eks_addon.this["aws-ebs-csi-driver"] will be created
   + resource "aws_eks_addon" "this" {
       + addon_name                  = "aws-ebs-csi-driver"
       + addon_version               = "v1.39.0-eksbuild.1"
@@ -1511,7 +1510,7 @@ Terraform will perform the following actions:
       + timeouts {}
     }
 
-  # module.eks_blueprints_addons.aws_eks_addon.this["kube-proxy"] will be creat                                                                                                               ed
+  # module.eks_blueprints_addons.aws_eks_addon.this["kube-proxy"] will be created
   + resource "aws_eks_addon" "this" {
       + addon_name                  = "kube-proxy"
       + addon_version               = "v1.31.3-eksbuild.2"
@@ -1557,7 +1556,7 @@ Terraform will perform the following actions:
       + timeouts {}
     }
 
-  # module.eks_blueprints_addons.aws_iam_instance_profile.karpenter[0] will be                                                                                                                created
+  # module.eks_blueprints_addons.aws_iam_instance_profile.karpenter[0] will be created
   + resource "aws_iam_instance_profile" "karpenter" {
       + arn         = (known after apply)
       + create_date = (known after apply)
@@ -1613,21 +1612,21 @@ Terraform will perform the following actions:
       + inline_policy (known after apply)
     }
 
-  # module.eks_blueprints_addons.aws_iam_role_policy_attachment.karpenter["Amaz                                                                                                               onEC2ContainerRegistryReadOnly"] will be created
+  # module.eks_blueprints_addons.aws_iam_role_policy_attachment.karpenter["AmazonEC2ContainerRegistryReadOnly"] will be created
   + resource "aws_iam_role_policy_attachment" "karpenter" {
       + id         = (known after apply)
-      + policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnl                                                                                                               y"
+      + policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
       + role       = (known after apply)
     }
 
-  # module.eks_blueprints_addons.aws_iam_role_policy_attachment.karpenter["Amaz                                                                                                               onEKSWorkerNodePolicy"] will be created
+  # module.eks_blueprints_addons.aws_iam_role_policy_attachment.karpenter["AmazonEKSWorkerNodePolicy"] will be created
   + resource "aws_iam_role_policy_attachment" "karpenter" {
       + id         = (known after apply)
       + policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
       + role       = (known after apply)
     }
 
-  # module.eks_blueprints_addons.aws_iam_role_policy_attachment.karpenter["Amaz                                                                                                               onEKS_CNI_Policy"] will be created
+  # module.eks_blueprints_addons.aws_iam_role_policy_attachment.karpenter["AmazonEKS_CNI_Policy"] will be created
   + resource "aws_iam_role_policy_attachment" "karpenter" {
       + id         = (known after apply)
       + policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
@@ -1653,7 +1652,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_i                                                                                                               am_policy_document.assume[0] will be read during apply
+  # module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.assume[0] will be read during apply
   # (config refers to values not yet known)
  <= data "aws_iam_policy_document" "assume" {
       + id            = (known after apply)
@@ -1676,7 +1675,7 @@ Terraform will perform the following actions:
           + condition {
               + test     = "StringEquals"
               + values   = [
-                  + "system:serviceaccount:kube-system:aws-load-balancer-contro                                                                                                               ller-sa",
+                  + "system:serviceaccount:kube-system:aws-load-balancer-controller-sa",
                 ]
               + variable = (known after apply)
             }
@@ -1690,7 +1689,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_po                                                                                                               licy.this[0] will be created
+  # module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_policy.this[0] will be created
   + resource "aws_iam_policy" "this" {
       + arn              = (known after apply)
       + attachment_count = (known after apply)
@@ -1706,7 +1705,7 @@ Terraform will perform the following actions:
                       + Action    = "iam:CreateServiceLinkedRole"
                       + Condition = {
                           + StringEquals = {
-                              + "iam:AWSServiceName" = "elasticloadbalancing.am                                                                                                               azonaws.com"
+                              + "iam:AWSServiceName" = "elasticloadbalancing.amazonaws.com"
                             }
                         }
                       + Effect    = "Allow"
@@ -1717,14 +1716,14 @@ Terraform will perform the following actions:
                           + "elasticloadbalancing:DescribeTrustStores",
                           + "elasticloadbalancing:DescribeTargetHealth",
                           + "elasticloadbalancing:DescribeTargetGroups",
-                          + "elasticloadbalancing:DescribeTargetGroupAttributes                                                                                                               ",
+                          + "elasticloadbalancing:DescribeTargetGroupAttributes",
                           + "elasticloadbalancing:DescribeTags",
                           + "elasticloadbalancing:DescribeSSLPolicies",
                           + "elasticloadbalancing:DescribeRules",
                           + "elasticloadbalancing:DescribeLoadBalancers",
-                          + "elasticloadbalancing:DescribeLoadBalancerAttribute                                                                                                               s",
+                          + "elasticloadbalancing:DescribeLoadBalancerAttributes",
                           + "elasticloadbalancing:DescribeListeners",
-                          + "elasticloadbalancing:DescribeListenerCertificates"                                                                                                               ,
+                          + "elasticloadbalancing:DescribeListenerCertificates",
                           + "elasticloadbalancing:DescribeListenerAttributes",
                           + "elasticloadbalancing:DescribeCapacityReservation",
                           + "ec2:GetSecurityGroupsForVpc",
@@ -1785,7 +1784,7 @@ Terraform will perform the following actions:
                       + Action    = "ec2:CreateTags"
                       + Condition = {
                           + Null         = {
-                              + "aws:RequestTag/elbv2.k8s.aws/cluster" = "false                                                                                                               "
+                              + "aws:RequestTag/elbv2.k8s.aws/cluster" = "false"
                             }
                           + StringEquals = {
                               + "ec2:CreateAction" = "CreateSecurityGroup"
@@ -1801,8 +1800,8 @@ Terraform will perform the following actions:
                         ]
                       + Condition = {
                           + Null = {
-                              + "aws:RequestTag/elbv2.k8s.aws/cluster"  = "true                                                                                                               "
-                              + "aws:ResourceTag/elbv2.k8s.aws/cluster" = "fals                                                                                                               e"
+                              + "aws:RequestTag/elbv2.k8s.aws/cluster"  = "true"
+                              + "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
                             }
                         }
                       + Effect    = "Allow"
@@ -1816,7 +1815,7 @@ Terraform will perform the following actions:
                         ]
                       + Condition = {
                           + Null = {
-                              + "aws:ResourceTag/elbv2.k8s.aws/cluster" = "fals                                                                                                               e"
+                              + "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
                             }
                         }
                       + Effect    = "Allow"
@@ -1829,7 +1828,7 @@ Terraform will perform the following actions:
                         ]
                       + Condition = {
                           + Null = {
-                              + "aws:RequestTag/elbv2.k8s.aws/cluster" = "false                                                                                                               "
+                              + "aws:RequestTag/elbv2.k8s.aws/cluster" = "false"
                             }
                         }
                       + Effect    = "Allow"
@@ -1852,15 +1851,15 @@ Terraform will perform the following actions:
                         ]
                       + Condition = {
                           + Null = {
-                              + "aws:RequestTag/elbv2.k8s.aws/cluster"  = "true                                                                                                               "
-                              + "aws:ResourceTag/elbv2.k8s.aws/cluster" = "fals                                                                                                               e"
+                              + "aws:RequestTag/elbv2.k8s.aws/cluster"  = "true"
+                              + "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
                             }
                         }
                       + Effect    = "Allow"
                       + Resource  = [
                           + "arn:aws:elasticloadbalancing:*:*:targetgroup/*/*",
-                          + "arn:aws:elasticloadbalancing:*:*:loadbalancer/net/                                                                                                               */*",
-                          + "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/                                                                                                               */*",
+                          + "arn:aws:elasticloadbalancing:*:*:loadbalancer/net/*/*",
+                          + "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*/*",
                         ]
                     },
                   + {
@@ -1870,10 +1869,10 @@ Terraform will perform the following actions:
                         ]
                       + Effect   = "Allow"
                       + Resource = [
-                          + "arn:aws:elasticloadbalancing:*:*:listener/net/*/*/                                                                                                               *",
-                          + "arn:aws:elasticloadbalancing:*:*:listener/app/*/*/                                                                                                               *",
-                          + "arn:aws:elasticloadbalancing:*:*:listener-rule/net                                                                                                               /*/*/*",
-                          + "arn:aws:elasticloadbalancing:*:*:listener-rule/app                                                                                                               /*/*/*",
+                          + "arn:aws:elasticloadbalancing:*:*:listener/net/*/*/*",
+                          + "arn:aws:elasticloadbalancing:*:*:listener/app/*/*/*",
+                          + "arn:aws:elasticloadbalancing:*:*:listener-rule/net/*/*/*",
+                          + "arn:aws:elasticloadbalancing:*:*:listener-rule/app/*/*/*",
                         ]
                     },
                   + {
@@ -1883,7 +1882,7 @@ Terraform will perform the following actions:
                           + "elasticloadbalancing:SetIpAddressType",
                           + "elasticloadbalancing:ModifyTargetGroupAttributes",
                           + "elasticloadbalancing:ModifyTargetGroup",
-                          + "elasticloadbalancing:ModifyLoadBalancerAttributes"                                                                                                               ,
+                          + "elasticloadbalancing:ModifyLoadBalancerAttributes",
                           + "elasticloadbalancing:ModifyListenerAttributes",
                           + "elasticloadbalancing:ModifyCapacityReservation",
                           + "elasticloadbalancing:DeleteTargetGroup",
@@ -1891,7 +1890,7 @@ Terraform will perform the following actions:
                         ]
                       + Condition = {
                           + Null = {
-                              + "aws:ResourceTag/elbv2.k8s.aws/cluster" = "fals                                                                                                               e"
+                              + "aws:ResourceTag/elbv2.k8s.aws/cluster" = "false"
                             }
                         }
                       + Effect    = "Allow"
@@ -1901,7 +1900,7 @@ Terraform will perform the following actions:
                       + Action    = "elasticloadbalancing:AddTags"
                       + Condition = {
                           + Null         = {
-                              + "aws:RequestTag/elbv2.k8s.aws/cluster" = "false                                                                                                               "
+                              + "aws:RequestTag/elbv2.k8s.aws/cluster" = "false"
                             }
                           + StringEquals = {
                               + "elasticloadbalancing:CreateAction" = [
@@ -1913,8 +1912,8 @@ Terraform will perform the following actions:
                       + Effect    = "Allow"
                       + Resource  = [
                           + "arn:aws:elasticloadbalancing:*:*:targetgroup/*/*",
-                          + "arn:aws:elasticloadbalancing:*:*:loadbalancer/net/                                                                                                               */*",
-                          + "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/                                                                                                               */*",
+                          + "arn:aws:elasticloadbalancing:*:*:loadbalancer/net/*/*",
+                          + "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*/*",
                         ]
                     },
                   + {
@@ -1923,7 +1922,7 @@ Terraform will perform the following actions:
                           + "elasticloadbalancing:DeregisterTargets",
                         ]
                       + Effect   = "Allow"
-                      + Resource = "arn:aws:elasticloadbalancing:*:*:targetgrou                                                                                                               p/*/*"
+                      + Resource = "arn:aws:elasticloadbalancing:*:*:targetgroup/*/*"
                     },
                   + {
                       + Action   = [
@@ -1949,7 +1948,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_ro                                                                                                               le.this[0] will be created
+  # module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_role.this[0] will be created
   + resource "aws_iam_role" "this" {
       + arn                   = (known after apply)
       + assume_role_policy    = (known after apply)
@@ -1973,21 +1972,21 @@ Terraform will perform the following actions:
       + inline_policy (known after apply)
     }
 
-  # module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_ro                                                                                                               le_policy_attachment.this[0] will be created
+  # module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_role_policy_attachment.this[0] will be created
   + resource "aws_iam_role_policy_attachment" "this" {
       + id         = (known after apply)
       + policy_arn = (known after apply)
       + role       = (known after apply)
     }
 
-  # module.eks_blueprints_addons.module.aws_load_balancer_controller.helm_relea                                                                                                               se.this[0] will be created
+  # module.eks_blueprints_addons.module.aws_load_balancer_controller.helm_release.this[0] will be created
   + resource "helm_release" "this" {
       + atomic                     = false
       + chart                      = "aws-load-balancer-controller"
       + cleanup_on_fail            = false
       + create_namespace           = false
       + dependency_update          = false
-      + description                = "A Helm chart to deploy aws-load-balancer-                                                                                                               controller for ingress resources"
+      + description                = "A Helm chart to deploy aws-load-balancer-controller for ingress resources"
       + disable_crd_hooks          = false
       + disable_openapi_validation = false
       + disable_webhooks           = false
@@ -2032,7 +2031,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_docume                                                                                                               nt.assume[0] will be read during apply
+  # module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.assume[0] will be read during apply
   # (config refers to values not yet known)
  <= data "aws_iam_policy_document" "assume" {
       + id            = (known after apply)
@@ -2091,7 +2090,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.cert_manager.aws_iam_policy.this[0] wil                                                                                                               l be created
+  # module.eks_blueprints_addons.module.cert_manager.aws_iam_policy.this[0] will be created
   + resource "aws_iam_policy" "this" {
       + arn              = (known after apply)
       + attachment_count = (known after apply)
@@ -2134,7 +2133,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.cert_manager.aws_iam_role.this[0] will                                                                                                                be created
+  # module.eks_blueprints_addons.module.cert_manager.aws_iam_role.this[0] will be created
   + resource "aws_iam_role" "this" {
       + arn                   = (known after apply)
       + assume_role_policy    = (known after apply)
@@ -2158,14 +2157,14 @@ Terraform will perform the following actions:
       + inline_policy (known after apply)
     }
 
-  # module.eks_blueprints_addons.module.cert_manager.aws_iam_role_policy_attach                                                                                                               ment.this[0] will be created
+  # module.eks_blueprints_addons.module.cert_manager.aws_iam_role_policy_attachment.this[0] will be created
   + resource "aws_iam_role_policy_attachment" "this" {
       + id         = (known after apply)
       + policy_arn = (known after apply)
       + role       = (known after apply)
     }
 
-  # module.eks_blueprints_addons.module.cert_manager.helm_release.this[0] will                                                                                                                be created
+  # module.eks_blueprints_addons.module.cert_manager.helm_release.this[0] will be created
   + resource "helm_release" "this" {
       + atomic                     = false
       + chart                      = "cert-manager"
@@ -2217,14 +2216,14 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.cluster_proportional_autoscaler.helm_re                                                                                                               lease.this[0] will be created
+  # module.eks_blueprints_addons.module.cluster_proportional_autoscaler.helm_release.this[0] will be created
   + resource "helm_release" "this" {
       + atomic                     = false
       + chart                      = "cluster-proportional-autoscaler"
       + cleanup_on_fail            = false
       + create_namespace           = false
       + dependency_update          = false
-      + description                = "A Helm chart to install the Cluster Propo                                                                                                               rtional Autoscaler"
+      + description                = "A Helm chart to install the Cluster Proportional Autoscaler"
       + disable_crd_hooks          = false
       + disable_openapi_validation = false
       + disable_webhooks           = false
@@ -2240,7 +2239,7 @@ Terraform will perform the following actions:
       + recreate_pods              = false
       + render_subchart_notes      = true
       + replace                    = false
-      + repository                 = "https://kubernetes-sigs.github.io/cluster                                                                                                               -proportional-autoscaler"
+      + repository                 = "https://kubernetes-sigs.github.io/cluster-proportional-autoscaler"
       + reset_values               = false
       + reuse_values               = false
       + skip_crds                  = false
@@ -2253,7 +2252,7 @@ Terraform will perform the following actions:
       + wait_for_jobs              = false
     }
 
-  # module.eks_blueprints_addons.module.external_dns.helm_release.this[0] will                                                                                                                be created
+  # module.eks_blueprints_addons.module.external_dns.helm_release.this[0] will be created
   + resource "helm_release" "this" {
       + atomic                     = false
       + chart                      = "external-dns"
@@ -2276,7 +2275,7 @@ Terraform will perform the following actions:
       + recreate_pods              = false
       + render_subchart_notes      = true
       + replace                    = false
-      + repository                 = "https://kubernetes-sigs.github.io/externa                                                                                                               l-dns/"
+      + repository                 = "https://kubernetes-sigs.github.io/external-dns/"
       + reset_values               = false
       + reuse_values               = false
       + skip_crds                  = false
@@ -2297,7 +2296,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.karpenter.data.aws_iam_policy_document.                                                                                                               assume[0] will be read during apply
+  # module.eks_blueprints_addons.module.karpenter.data.aws_iam_policy_document.assume[0] will be read during apply
   # (config refers to values not yet known)
  <= data "aws_iam_policy_document" "assume" {
       + id            = (known after apply)
@@ -2334,7 +2333,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.karpenter.data.aws_iam_policy_document.                                                                                                               this[0] will be read during apply
+  # module.eks_blueprints_addons.module.karpenter.data.aws_iam_policy_document.this[0] will be read during apply
   # (config refers to values not yet known)
  <= data "aws_iam_policy_document" "this" {
       + id                        = (known after apply)
@@ -2346,7 +2345,7 @@ Terraform will perform the following actions:
         ]
     }
 
-  # module.eks_blueprints_addons.module.karpenter.aws_iam_policy.this[0] will b                                                                                                               e created
+  # module.eks_blueprints_addons.module.karpenter.aws_iam_policy.this[0] will be created
   + resource "aws_iam_policy" "this" {
       + arn              = (known after apply)
       + attachment_count = (known after apply)
@@ -2365,7 +2364,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.karpenter.aws_iam_role.this[0] will be                                                                                                                created
+  # module.eks_blueprints_addons.module.karpenter.aws_iam_role.this[0] will be created
   + resource "aws_iam_role" "this" {
       + arn                   = (known after apply)
       + assume_role_policy    = (known after apply)
@@ -2389,14 +2388,14 @@ Terraform will perform the following actions:
       + inline_policy (known after apply)
     }
 
-  # module.eks_blueprints_addons.module.karpenter.aws_iam_role_policy_attachmen                                                                                                               t.this[0] will be created
+  # module.eks_blueprints_addons.module.karpenter.aws_iam_role_policy_attachment.this[0] will be created
   + resource "aws_iam_role_policy_attachment" "this" {
       + id         = (known after apply)
       + policy_arn = (known after apply)
       + role       = (known after apply)
     }
 
-  # module.eks_blueprints_addons.module.karpenter.helm_release.this[0] will be                                                                                                                created
+  # module.eks_blueprints_addons.module.karpenter.helm_release.this[0] will be created
   + resource "helm_release" "this" {
       + atomic                     = false
       + chart                      = "karpenter"
@@ -2434,7 +2433,7 @@ Terraform will perform the following actions:
       + set (known after apply)
     }
 
-  # module.eks_blueprints_addons.module.karpenter_sqs.data.aws_iam_policy_docum                                                                                                               ent.this[0] will be read during apply
+  # module.eks_blueprints_addons.module.karpenter_sqs.data.aws_iam_policy_document.this[0] will be read during apply
   # (config refers to values not yet known)
  <= data "aws_iam_policy_document" "this" {
       + id                        = (known after apply)
@@ -2460,7 +2459,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.eks_blueprints_addons.module.karpenter_sqs.aws_sqs_queue.this[0] wil                                                                                                               l be created
+  # module.eks_blueprints_addons.module.karpenter_sqs.aws_sqs_queue.this[0] will be created
   + resource "aws_sqs_queue" "this" {
       + arn                               = (known after apply)
       + content_based_deduplication       = false
@@ -2489,21 +2488,21 @@ Terraform will perform the following actions:
       + visibility_timeout_seconds        = 30
     }
 
-  # module.eks_blueprints_addons.module.karpenter_sqs.aws_sqs_queue_policy.this                                                                                                               [0] will be created
+  # module.eks_blueprints_addons.module.karpenter_sqs.aws_sqs_queue_policy.this[0] will be created
   + resource "aws_sqs_queue_policy" "this" {
       + id        = (known after apply)
       + policy    = (known after apply)
       + queue_url = (known after apply)
     }
 
-  # module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this                                                                                                               [0] will be created
+  # module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this[0] will be created
   + resource "helm_release" "this" {
       + atomic                     = false
       + chart                      = "kube-prometheus-stack"
       + cleanup_on_fail            = false
       + create_namespace           = true
       + dependency_update          = false
-      + description                = "A Helm chart to install the Kube Promethe                                                                                                               us Stack"
+      + description                = "A Helm chart to install the Kube Prometheus Stack"
       + disable_crd_hooks          = false
       + disable_openapi_validation = false
       + disable_webhooks           = false
@@ -2519,7 +2518,7 @@ Terraform will perform the following actions:
       + recreate_pods              = false
       + render_subchart_notes      = true
       + replace                    = false
-      + repository                 = "https://prometheus-community.github.io/he                                                                                                               lm-charts"
+      + repository                 = "https://prometheus-community.github.io/helm-charts"
       + reset_values               = false
       + reuse_values               = false
       + skip_crds                  = false
@@ -2532,14 +2531,14 @@ Terraform will perform the following actions:
       + wait_for_jobs              = false
     }
 
-  # module.eks_blueprints_addons.module.metrics_server.helm_release.this[0] wil                                                                                                               l be created
+  # module.eks_blueprints_addons.module.metrics_server.helm_release.this[0] will be created
   + resource "helm_release" "this" {
       + atomic                     = false
       + chart                      = "metrics-server"
       + cleanup_on_fail            = false
       + create_namespace           = false
       + dependency_update          = false
-      + description                = "A Helm chart to install the Metrics Serve                                                                                                               r"
+      + description                = "A Helm chart to install the Metrics Server"
       + disable_crd_hooks          = false
       + disable_openapi_validation = false
       + disable_webhooks           = false
@@ -2555,7 +2554,7 @@ Terraform will perform the following actions:
       + recreate_pods              = false
       + render_subchart_notes      = true
       + replace                    = false
-      + repository                 = "https://kubernetes-sigs.github.io/metrics                                                                                                               -server/"
+      + repository                 = "https://kubernetes-sigs.github.io/metrics-server/"
       + reset_values               = false
       + reuse_values               = false
       + skip_crds                  = false
