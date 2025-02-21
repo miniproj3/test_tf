@@ -7,7 +7,14 @@
 │   └── 📁 database/          # RDS, DynamoDB 등 데이터베이스 리소스 <br>
 
 ```
-[terraform@ip-192-168-10-138 terraform-aws]$ aws ssm get-parameter --name /aws/service/eks/optimized-ami/1.31/amazon-linux-2/recommended/image_id --region ap-northeast-2 --query "Parameter.Value" --output text
-ami-0fa05db9e3c145f63
+[terraform@ip-192-168-10-138 terraform-aws]$ curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+Downloading https://get.helm.sh/helm-v3.17.1-linux-amd64.tar.gz
+Verifying checksum... Done.
+Preparing to install helm into /usr/local/bin
+[sudo] password for terraform:
+helm installed into /usr/local/bin/helm
+[terraform@ip-192-168-10-138 terraform-aws]$ helm version
+version.BuildInfo{Version:"v3.17.1", GitCommit:"980d8ac1939e39138101364400756af2bdee1da5", GitTreeState:"clean", GoVersion:"go1.23.5"}
+
 ```
 
