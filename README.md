@@ -46,6 +46,21 @@ version.BuildInfo{Version:"v3.17.1", GitCommit:"980d8ac1939e39138101364400756af2
 <br>
 <br>
 
+# kubectl을 k로 별칭 만들기
+```
+# 터미널에서 ~/.bashrc 파일을 열기
+vi ~/.bashrc
+
+# 파일의 맨 아래에 아래 내용을 추가
+alias k=kubectl
+
+# 변경 사항 적용
+source ~/.bashrc
+```
+
+<br>
+<br>
+
 # 테라폼 실행 후 리소스 확인
 ```
 [ec2-user@ip-10-0-1-147 ~]$ k get nodes
