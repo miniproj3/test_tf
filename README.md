@@ -29,9 +29,8 @@
 
 <br>
 <br>
-<br>
 
-### 테라폼을 실행하는 VM에 helm 설치
+# 테라폼을 실행하는 VM에 helm 설치
 
 ```
 [terraform@ip-192-168-10-138 terraform-aws]$ curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
@@ -45,5 +44,51 @@ version.BuildInfo{Version:"v3.17.1", GitCommit:"980d8ac1939e39138101364400756af2
 ```
 
 <br>
+<br>
+
+# 테라폼 실행 후 리소스 확인
+```
+[ec2-user@ip-10-0-1-147 ~]$ k get nodes
+NAME                                            STATUS   ROLES    AGE    VERSION
+ip-10-0-3-31.ap-northeast-2.compute.internal    Ready    <none>   156m   v1.31.5-eks-5d632ec
+ip-10-0-4-232.ap-northeast-2.compute.internal   Ready    <none>   156m   v1.31.5-eks-5d632ec
+```
+
+```
+[ec2-user@ip-10-0-1-147 ~]$ k get svc
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   172.20.0.1   <none>        443/TCP   164m
+```
+
+```
+[ec2-user@ip-10-0-1-147 ~]$ k get namespace
+NAME                    STATUS   AGE
+cert-manager            Active   81m
+default                 Active   165m
+external-dns            Active   81m
+karpenter               Active   81m
+kube-node-lease         Active   165m
+kube-prometheus-stack   Active   81m
+kube-public             Active   165m
+kube-system             Active   165m
+```
+
+```
+[ec2-user@ip-10-0-1-147 ~]$ k get pods -n kube-system
+NAME                                           READY   STATUS    RESTARTS   AGE
+aws-load-balancer-controller-58b554974-rwfrg   1/1     Running   0          96m
+aws-load-balancer-controller-58b554974-twcx8   1/1     Running   0          96m
+aws-node-6cxpn                                 2/2     Running   0          95m
+aws-node-r4wfq                                 2/2     Running   0          95m
+coredns-86f5954566-knl94                       1/1     Running   0          95m
+coredns-86f5954566-qdmwp                       1/1     Running   0          95m
+ebs-csi-controller-5b7d498c64-chwlx            6/6     Running   0          95m
+ebs-csi-controller-5b7d498c64-f58qj            6/6     Running   0          95m
+ebs-csi-node-6sk6z                             3/3     Running   0          95m
+ebs-csi-node-sj42q                             3/3     Running   0          95m
+kube-proxy-l8ncf                               1/1     Running   0          95m
+kube-proxy-wcskn                               1/1     Running   0          95m
+metrics-server-59659dbfc9-gswr4                1/1     Running   0          96m
+```
 <br>
 <br>
