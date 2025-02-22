@@ -1,0 +1,93 @@
+$ kubectl get all -A
+NAMESPACE               NAME                                                            READY   STATUS             RESTARTS        AGE
+cert-manager            pod/cert-manager-7ddb454967-z5gnc                               1/1     Running            0               11m
+cert-manager            pod/cert-manager-cainjector-766dd9ccf7-bq9zf                    1/1     Running            0               11m
+cert-manager            pod/cert-manager-webhook-9c98cff95-hkvzr                        1/1     Running            0               11m
+external-dns            pod/external-dns-7465775dd-lvcsv                                0/1     CrashLoopBackOff   6 (4m51s ago)   11m
+karpenter               pod/karpenter-5f845f4d98-jlx62                                  1/1     Running            0               11m
+karpenter               pod/karpenter-5f845f4d98-jsjtt                                  1/1     Running            0               11m
+kube-prometheus-stack   pod/alertmanager-kube-prometheus-stack-alertmanager-0           2/2     Running            0               6m52s
+kube-prometheus-stack   pod/kube-prometheus-stack-grafana-d477cd865-52js9               3/3     Running            0               6m53s
+kube-prometheus-stack   pod/kube-prometheus-stack-kube-state-metrics-7cc6fcdf84-4kngb   1/1     Running            0               6m53s
+kube-prometheus-stack   pod/kube-prometheus-stack-operator-66f4fb967-gt64g              1/1     Running            0               6m53s
+kube-prometheus-stack   pod/kube-prometheus-stack-prometheus-node-exporter-jld8h        1/1     Running            0               6m53s
+kube-prometheus-stack   pod/kube-prometheus-stack-prometheus-node-exporter-zs46r        1/1     Running            0               6m53s
+kube-prometheus-stack   pod/prometheus-kube-prometheus-stack-prometheus-0               2/2     Running            0               6m51s
+kube-system             pod/aws-load-balancer-controller-58b554974-mv5rb                1/1     Running            0               11m
+kube-system             pod/aws-load-balancer-controller-58b554974-sw7sd                1/1     Running            0               11m
+kube-system             pod/aws-node-pcgns                                              2/2     Running            0               10m
+kube-system             pod/aws-node-zzjd9                                              2/2     Running            0               10m
+kube-system             pod/coredns-86f5954566-8sv8k                                    1/1     Running            0               10m
+kube-system             pod/coredns-86f5954566-lzppt                                    1/1     Running            0               10m
+kube-system             pod/ebs-csi-controller-5b7d498c64-ct9qd                         6/6     Running            0               10m
+kube-system             pod/ebs-csi-controller-5b7d498c64-jhpdt                         6/6     Running            0               10m
+kube-system             pod/ebs-csi-node-2wvf9                                          3/3     Running            0               10m
+kube-system             pod/ebs-csi-node-xxv9h                                          3/3     Running            0               10m
+kube-system             pod/kube-proxy-gghzm                                            1/1     Running            0               10m
+kube-system             pod/kube-proxy-nnb98                                            1/1     Running            0               10m
+kube-system             pod/metrics-server-59659dbfc9-tbbhn                             1/1     Running            0               12m
+
+NAMESPACE               NAME                                                     TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                        AGE
+cert-manager            service/cert-manager                                     ClusterIP   172.20.117.163   <none>        9402/TCP                       11m
+cert-manager            service/cert-manager-webhook                             ClusterIP   172.20.79.117    <none>        443/TCP                        11m
+default                 service/kubernetes                                       ClusterIP   172.20.0.1       <none>        443/TCP                        15m
+external-dns            service/external-dns                                     ClusterIP   172.20.227.254   <none>        7979/TCP                       11m
+karpenter               service/karpenter                                        ClusterIP   172.20.117.79    <none>        8000/TCP                       11m
+kube-prometheus-stack   service/alertmanager-operated                            ClusterIP   None             <none>        9093/TCP,9094/TCP,9094/UDP     6m52s
+kube-prometheus-stack   service/kube-prometheus-stack-alertmanager               ClusterIP   172.20.241.160   <none>        9093/TCP,8080/TCP              6m53s
+kube-prometheus-stack   service/kube-prometheus-stack-grafana                    ClusterIP   172.20.208.242   <none>        80/TCP                         6m53s
+kube-prometheus-stack   service/kube-prometheus-stack-kube-state-metrics         ClusterIP   172.20.51.194    <none>        8080/TCP                       6m53s
+kube-prometheus-stack   service/kube-prometheus-stack-operator                   ClusterIP   172.20.16.137    <none>        443/TCP                        6m53s
+kube-prometheus-stack   service/kube-prometheus-stack-prometheus                 ClusterIP   172.20.239.30    <none>        9090/TCP,8080/TCP              6m53s
+kube-prometheus-stack   service/kube-prometheus-stack-prometheus-node-exporter   ClusterIP   172.20.225.71    <none>        9100/TCP                       6m53s
+kube-prometheus-stack   service/prometheus-operated                              ClusterIP   None             <none>        9090/TCP                       6m51s
+kube-system             service/aws-load-balancer-webhook-service                ClusterIP   172.20.182.158   <none>        443/TCP                        11m
+kube-system             service/eks-extension-metrics-api                        ClusterIP   172.20.51.42     <none>        443/TCP                        15m
+kube-system             service/kube-dns                                         ClusterIP   172.20.0.10      <none>        53/UDP,53/TCP,9153/TCP         14m
+kube-system             service/kube-prometheus-stack-coredns                    ClusterIP   None             <none>        9153/TCP                       6m53s
+kube-system             service/kube-prometheus-stack-kube-controller-manager    ClusterIP   None             <none>        10257/TCP                      6m53s
+kube-system             service/kube-prometheus-stack-kube-etcd                  ClusterIP   None             <none>        2381/TCP                       6m53s
+kube-system             service/kube-prometheus-stack-kube-proxy                 ClusterIP   None             <none>        10249/TCP                      6m53s
+kube-system             service/kube-prometheus-stack-kube-scheduler             ClusterIP   None             <none>        10259/TCP                      6m53s
+kube-system             service/kube-prometheus-stack-kubelet                    ClusterIP   None             <none>        10250/TCP,10255/TCP,4194/TCP   7m41s
+kube-system             service/metrics-server                                   ClusterIP   172.20.166.46    <none>        443/TCP                        12m
+
+NAMESPACE               NAME                                                            DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR              AGE
+kube-prometheus-stack   daemonset.apps/kube-prometheus-stack-prometheus-node-exporter   2         2         2       2            2           kubernetes.io/os=linux     6m53s
+kube-system             daemonset.apps/aws-node                                         2         2         2       2            2           <none>                     14m
+kube-system             daemonset.apps/ebs-csi-node                                     2         2         2       2            2           kubernetes.io/os=linux     10m
+kube-system             daemonset.apps/ebs-csi-node-windows                             0         0         0       0            0           kubernetes.io/os=windows   10m
+kube-system             daemonset.apps/kube-proxy                                       2         2         2       2            2           <none>                     14m
+
+NAMESPACE               NAME                                                       READY   UP-TO-DATE   AVAILABLE   AGE
+cert-manager            deployment.apps/cert-manager                               1/1     1            1           11m
+cert-manager            deployment.apps/cert-manager-cainjector                    1/1     1            1           11m
+cert-manager            deployment.apps/cert-manager-webhook                       1/1     1            1           11m
+external-dns            deployment.apps/external-dns                               0/1     1            0           11m
+karpenter               deployment.apps/karpenter                                  2/2     2            2           11m
+kube-prometheus-stack   deployment.apps/kube-prometheus-stack-grafana              1/1     1            1           6m53s
+kube-prometheus-stack   deployment.apps/kube-prometheus-stack-kube-state-metrics   1/1     1            1           6m53s
+kube-prometheus-stack   deployment.apps/kube-prometheus-stack-operator             1/1     1            1           6m53s
+kube-system             deployment.apps/aws-load-balancer-controller               2/2     2            2           11m
+kube-system             deployment.apps/coredns                                    2/2     2            2           14m
+kube-system             deployment.apps/ebs-csi-controller                         2/2     2            2           10m
+kube-system             deployment.apps/metrics-server                             1/1     1            1           12m
+
+NAMESPACE               NAME                                                                  DESIRED   CURRENT   READY   AGE
+cert-manager            replicaset.apps/cert-manager-7ddb454967                               1         1         1       11m
+cert-manager            replicaset.apps/cert-manager-cainjector-766dd9ccf7                    1         1         1       11m
+cert-manager            replicaset.apps/cert-manager-webhook-9c98cff95                        1         1         1       11m
+external-dns            replicaset.apps/external-dns-7465775dd                                1         1         0       11m
+karpenter               replicaset.apps/karpenter-5f845f4d98                                  2         2         2       11m
+kube-prometheus-stack   replicaset.apps/kube-prometheus-stack-grafana-d477cd865               1         1         1       6m53s
+kube-prometheus-stack   replicaset.apps/kube-prometheus-stack-kube-state-metrics-7cc6fcdf84   1         1         1       6m53s
+kube-prometheus-stack   replicaset.apps/kube-prometheus-stack-operator-66f4fb967              1         1         1       6m53s
+kube-system             replicaset.apps/aws-load-balancer-controller-58b554974                2         2         2       11m
+kube-system             replicaset.apps/coredns-86f5954566                                    2         2         2       10m
+kube-system             replicaset.apps/coredns-9b5bc9468                                     0         0         0       14m
+kube-system             replicaset.apps/ebs-csi-controller-5b7d498c64                         2         2         2       10m
+kube-system             replicaset.apps/metrics-server-59659dbfc9                             1         1         1       12m
+
+NAMESPACE               NAME                                                               READY   AGE
+kube-prometheus-stack   statefulset.apps/alertmanager-kube-prometheus-stack-alertmanager   1/1     6m52s
+kube-prometheus-stack   statefulset.apps/prometheus-kube-prometheus-stack-prometheus       1/1     6m51s
