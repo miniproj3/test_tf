@@ -22,18 +22,6 @@ provider "helm" {
   }
 }
 
-# # OIDC Thumbprint 가져오기
-# data "tls_certificate" "eks_oidc" {
-#   url = aws_eks_cluster.tf_eks_cluster.identity[0].oidc[0].issuer
-# }
-
-# # OIDC 프로바이더 생성
-# resource "aws_iam_openid_connect_provider" "tf_oidc_provider" {
-#   client_id_list  = ["sts.amazonaws.com"] # AWS에서 사용하는 기본 클라이언트 ID
-#   thumbprint_list = [data.tls_certificate.eks_oidc.certificates[0].sha1_fingerprint]
-#   url             = aws_eks_cluster.tf_eks_cluster.identity[0].oidc[0].issuer
-# }
-
 # OIDC 프로바이더 생성 (thumbprint 생략)
 resource "aws_iam_openid_connect_provider" "tf_oidc_provider" {
   client_id_list = ["sts.amazonaws.com"]
@@ -59,15 +47,16 @@ module "eks_blueprints_addons" {
   }
 
   enable_aws_load_balancer_controller    = true
-  enable_cluster_proportional_autoscaler = true
+  # enable_cluster_proportional_autoscaler = true
   enable_karpenter                       = true
   enable_kube_prometheus_stack           = true
   enable_metrics_server                  = true
   enable_external_dns                    = true
   enable_cert_manager                    = true
-  # cert_manager_route53_hosted_zone_arns  = ["arn:aws:route53:::hostedzone/XXXXXXXXXXXXX"]
+  cert_manager_route53_hosted_zone_arns  = ["arn:aws:route53:::hostedzone/Z0606134MJ4WUL8MELBR"] # hostezone/<호스팅 영역ID>
 
   tags                                   = {
     Environment                          = "dev"
   }
 }
+
