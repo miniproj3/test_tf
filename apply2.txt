@@ -1,0 +1,231 @@
+module.eks_blueprints_addons.random_bytes.this: Refreshing state...
+tls_private_key.tf_bastion_key: Refreshing state... [id=534d139d48144b9d5eb870629b9e165982b20768]
+local_file.tf_bastion_private_key: Refreshing state... [id=0162769a7edb0ad9c78840e3ab2c507436c32b69]
+module.eks_blueprints_addons.module.cert_manager.data.aws_caller_identity.current[0]: Reading...
+module.eks_blueprints_addons.module.karpenter.data.aws_partition.current[0]: Reading...
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_partition.current[0]: Reading...
+aws_key_pair.tf_bastion_key: Refreshing state... [id=tf-bastion-key]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_caller_identity.current[0]: Reading...
+module.eks_blueprints_addons.module.cert_manager.data.aws_partition.current[0]: Reading...
+aws_iam_role.tf_eks_cluster_iam_role: Refreshing state... [id=tf-eks-cluster-iam-role]
+module.eks_blueprints_addons.module.karpenter.data.aws_caller_identity.current[0]: Reading...
+module.eks_blueprints_addons.data.aws_partition.current: Reading...
+module.eks_blueprints_addons.data.aws_region.current: Reading...
+module.eks_blueprints_addons.module.karpenter.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.eks_blueprints_addons.module.cert_manager.data.aws_caller_identity.current[0]: Read complete after 0s [id=707677861059]
+module.eks_blueprints_addons.module.cert_manager.data.aws_partition.current[0]: Read complete after 0s [id=aws]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_caller_identity.current[0]: Read complete after 0s [id=707677861059]
+aws_vpc.tf_vpc: Refreshing state... [id=vpc-0c4e2afdbbb72a2e6]
+module.eks_blueprints_addons.data.aws_caller_identity.current: Reading...
+module.eks_blueprints_addons.data.aws_region.current: Read complete after 0s [id=ap-northeast-2]
+module.eks_blueprints_addons.data.aws_partition.current: Read complete after 0s [id=aws]
+module.eks_blueprints_addons.module.karpenter.data.aws_caller_identity.current[0]: Read complete after 0s [id=707677861059]
+aws_eip.tf_eip: Refreshing state... [id=eipalloc-0ff3a7b080a40c800]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["coredns"]: Reading...
+module.eks_blueprints_addons.data.aws_caller_identity.current: Read complete after 0s [id=707677861059]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["kube-proxy"]: Reading...
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["vpc-cni"]: Reading...
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["aws-ebs-csi-driver"]: Reading...
+aws_iam_role.tf_eks_managed_node_group_iam_role: Refreshing state... [id=tf-eks-managed-node-role]
+module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter_assume_role[0]: Reading...
+module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter_assume_role[0]: Read complete after 0s [id=106987850]
+module.eks_blueprints_addons.data.aws_iam_policy_document.cert_manager[0]: Reading...
+module.eks_blueprints_addons.data.aws_iam_policy_document.cert_manager[0]: Read complete after 0s [id=3443122974]
+module.eks_blueprints_addons.data.aws_iam_policy_document.aws_load_balancer_controller[0]: Reading...
+module.eks_blueprints_addons.data.aws_iam_policy_document.aws_load_balancer_controller[0]: Read complete after 0s [id=1166930017]
+module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.this[0]: Reading...
+module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=3443122974]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.this[0]: Reading...
+module.eks_blueprints_addons.module.cert_manager.aws_iam_policy.this[0]: Refreshing state... [id=arn:aws:iam::707677861059:policy/cert-manager-20250222194417434700000002]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=1166930017]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_policy.this[0]: Refreshing state... [id=arn:aws:iam::707677861059:policy/alb-controller-20250222194417430400000001]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["coredns"]: Read complete after 0s [id=coredns]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["vpc-cni"]: Read complete after 0s [id=vpc-cni]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["aws-ebs-csi-driver"]: Read complete after 0s [id=aws-ebs-csi-driver]
+module.eks_blueprints_addons.data.aws_eks_addon_version.this["kube-proxy"]: Read complete after 0s [id=kube-proxy]
+aws_route_table.tf_pub_rtb: Refreshing state... [id=rtb-06936d187eeb9f357]
+aws_internet_gateway.tf_igw: Refreshing state... [id=igw-0c3ceba5783fa6d5f]
+aws_subnet.tf_pub_sub_2: Refreshing state... [id=subnet-0d16a523989deab3e]
+aws_subnet.tf_rds_sub_2: Refreshing state... [id=subnet-0e675976586b7b4fb]
+aws_subnet.tf_pri_sub_1: Refreshing state... [id=subnet-090859c27547ed4c9]
+aws_subnet.tf_pub_sub_1: Refreshing state... [id=subnet-0d86a5a2ae9767ae4]
+aws_security_group.tf_bastion_sg: Refreshing state... [id=sg-044d99a427e3eb875]
+aws_subnet.tf_rds_sub_1: Refreshing state... [id=subnet-0533fa57bb6108d14]
+aws_subnet.tf_pri_sub_2: Refreshing state... [id=subnet-019991981e8b103ef]
+aws_route_table.tf_pri_rtb: Refreshing state... [id=rtb-05a5f67a9c834f375]
+aws_route53_zone.tf_route53_private: Refreshing state... [id=Z103608915TLRY7PMLUHH]
+aws_route.tf_pub_route_igw: Refreshing state... [id=r-rtb-06936d187eeb9f3571080289494]
+aws_route_table_association.tf_pub_sub_1_association: Refreshing state... [id=rtbassoc-0a569f2e11d386c71]
+aws_nat_gateway.tf_nat: Refreshing state... [id=nat-022a295eb1a0de45b]
+aws_route_table_association.tf_pub_sub_2_association: Refreshing state... [id=rtbassoc-0c08eb52e9ad61f9a]
+aws_security_group.tf_eks_cluster_sg: Refreshing state... [id=sg-0243c72b24ba10815]
+aws_instance.tf_bastion: Refreshing state... [id=i-0e78ed69adbd698af]
+aws_db_subnet_group.tf_rds_subnet_group: Refreshing state... [id=tf-rds-subnet-group]
+aws_route_table_association.tf_rds_sub_2_association: Refreshing state... [id=rtbassoc-060ecdba693a7016d]
+aws_route_table_association.tf_pri_sub_1_association: Refreshing state... [id=rtbassoc-06fb9961d0a26be9c]
+aws_route_table_association.tf_rds_sub_1_association: Refreshing state... [id=rtbassoc-0dbc4d3fbafab88b6]
+aws_route_table_association.tf_pri_sub_2_association: Refreshing state... [id=rtbassoc-0c5e9981945d0cd87]
+aws_route.tf_pri_route_nat: Refreshing state... [id=r-rtb-05a5f67a9c834f3751080289494]
+aws_security_group.tf_eks_node_group_sg: Refreshing state... [id=sg-0251c9bee84ab5ac0]
+aws_security_group.tf_rds_sg: Refreshing state... [id=sg-0ff90daadc8f2a055]
+aws_db_instance.tf_rds: Refreshing state... [id=db-SGITXYG6UI2PT4PYWK2TNO2SXI]
+aws_iam_role_policy_attachment.tf_eks_cluster_policy_AmazonEKSClusterPolicy: Refreshing state... [id=tf-eks-cluster-iam-role-20250222194419080500000005]
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEC2ContainerRegistryReadOnly: Refreshing state... [id=tf-eks-managed-node-role-20250222194419059100000003]
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKSWorkerNodePolicy: Refreshing state... [id=tf-eks-managed-node-role-20250222194419072500000004]
+aws_iam_role_policy_attachment.tf_eks_managed_node_group_policy_AmazonEKS_CNI_Policy: Refreshing state... [id=tf-eks-managed-node-role-20250222194419111000000006]
+aws_eks_cluster.tf_eks_cluster: Refreshing state... [id=tf-eks-cluster]
+module.eks_blueprints_addons.aws_cloudformation_stack.usage_telemetry[0]: Refreshing state... [id=arn:aws:cloudformation:ap-northeast-2:707677861059:stack/tf-eks-cluster-6d0e/829af6d0-f156-11ef-b77d-0adc5eb6bb5b]
+module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["health_event"]: Refreshing state... [id=Karpenter-HealthEvent-20250222195213187300000011]
+module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["instance_rebalance"]: Refreshing state... [id=Karpenter-InstanceRebalance-2025022219521318140000000f]
+module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["spot_interupt"]: Refreshing state... [id=Karpenter-SpotInterrupt-2025022219521317590000000d]
+module.eks_blueprints_addons.aws_iam_role.karpenter[0]: Refreshing state... [id=karpenter-tf-eks-cluster-20250222195213329100000014]
+aws_iam_openid_connect_provider.tf_oidc_provider: Refreshing state... [id=arn:aws:iam::707677861059:oidc-provider/oidc.eks.ap-northeast-2.amazonaws.com/id/BD79606CFA09DAAE71963F33AF4488DE]
+module.eks_blueprints_addons.aws_cloudwatch_event_rule.karpenter["instance_state_change"]: Refreshing state... [id=Karpenter-InstanceStateChange-2025022219521317660000000e]
+module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this[0]: Refreshing state... [id=kube-prometheus-stack]
+aws_launch_template.tf_eks_node_lt: Refreshing state... [id=lt-08826400b0c8c9c31]
+module.eks_blueprints_addons.module.metrics_server.helm_release.this[0]: Refreshing state... [id=metrics-server]
+module.eks_blueprints_addons.module.karpenter_sqs.aws_sqs_queue.this[0]: Refreshing state... [id=https://sqs.ap-northeast-2.amazonaws.com/707677861059/karpenter-tf-eks-cluster]
+module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["health_event"]: Refreshing state... [id=Karpenter-HealthEvent-20250222195213187300000011-KarpenterQueueTarget]
+module.eks_blueprints_addons.module.karpenter_sqs.data.aws_iam_policy_document.this[0]: Reading...
+module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["instance_rebalance"]: Refreshing state... [id=Karpenter-InstanceRebalance-2025022219521318140000000f-KarpenterQueueTarget]
+module.eks_blueprints_addons.module.karpenter_sqs.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=1381299986]
+module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["instance_state_change"]: Refreshing state... [id=Karpenter-InstanceStateChange-2025022219521317660000000e-KarpenterQueueTarget]
+module.eks_blueprints_addons.aws_cloudwatch_event_target.karpenter["spot_interupt"]: Refreshing state... [id=Karpenter-SpotInterrupt-2025022219521317590000000d-KarpenterQueueTarget]
+module.eks_blueprints_addons.time_sleep.this: Refreshing state... [id=2025-02-22T19:52:45Z]
+aws_eks_node_group.tf_eks_managed_node_group: Refreshing state... [id=tf-eks-cluster:tf-eks-managed-node-group]
+module.eks_blueprints_addons.module.karpenter_sqs.aws_sqs_queue_policy.this[0]: Refreshing state... [id=https://sqs.ap-northeast-2.amazonaws.com/707677861059/karpenter-tf-eks-cluster]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.assume[0]: Reading...
+module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.assume[0]: Reading...
+module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.assume[0]: Read complete after 0s [id=2722026847]
+module.eks_blueprints_addons.module.karpenter.data.aws_iam_policy_document.assume[0]: Reading...
+module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.assume[0]: Read complete after 0s [id=2780879276]
+module.eks_blueprints_addons.module.karpenter.data.aws_iam_policy_document.assume[0]: Read complete after 0s [id=2206314507]
+module.eks_blueprints_addons.module.karpenter.aws_iam_role.this[0]: Refreshing state... [id=karpenter-2025022219524563340000001d]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_role.this[0]: Refreshing state... [id=alb-controller-2025022219524562840000001c]
+module.eks_blueprints_addons.module.external_dns.helm_release.this[0]: Refreshing state... [id=external-dns]
+module.eks_blueprints_addons.module.cert_manager.aws_iam_role.this[0]: Refreshing state... [id=cert-manager-2025022219524562670000001b]
+aws_route53_record.tf_rds_endpoint: Refreshing state... [id=Z103608915TLRY7PMLUHH_rds.tf.private.com_CNAME]
+module.eks_blueprints_addons.aws_iam_role_policy_attachment.karpenter["AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=karpenter-tf-eks-cluster-20250222195213329100000014-20250222195215002900000016]
+module.eks_blueprints_addons.aws_iam_role_policy_attachment.karpenter["AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=karpenter-tf-eks-cluster-20250222195213329100000014-20250222195215253400000017]
+module.eks_blueprints_addons.aws_iam_role_policy_attachment.karpenter["AmazonEKS_CNI_Policy"]: Refreshing state... [id=karpenter-tf-eks-cluster-20250222195213329100000014-20250222195215723200000018]
+module.eks_blueprints_addons.aws_iam_instance_profile.karpenter[0]: Refreshing state... [id=karpenter-tf-eks-cluster-20250222195214753500000015]
+module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter[0]: Reading...
+module.eks_blueprints_addons.data.aws_iam_policy_document.karpenter[0]: Read complete after 0s [id=4091166477]
+module.eks_blueprints_addons.module.karpenter.data.aws_iam_policy_document.this[0]: Reading...
+module.eks_blueprints_addons.module.karpenter.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=4091166477]
+module.eks_blueprints_addons.module.karpenter.aws_iam_policy.this[0]: Refreshing state... [id=arn:aws:iam::707677861059:policy/karpenter-2025022219523861420000001a]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_role_policy_attachment.this[0]: Refreshing state... [id=alb-controller-2025022219524562840000001c-2025022219524677380000001e]
+module.eks_blueprints_addons.module.aws_load_balancer_controller.helm_release.this[0]: Refreshing state... [id=aws-load-balancer-controller]
+module.eks_blueprints_addons.module.cert_manager.aws_iam_role_policy_attachment.this[0]: Refreshing state... [id=cert-manager-2025022219524562670000001b-2025022219524680110000001f]
+module.eks_blueprints_addons.module.cert_manager.helm_release.this[0]: Refreshing state... [id=cert-manager]
+module.eks_blueprints_addons.module.karpenter.helm_release.this[0]: Refreshing state... [id=karpenter]
+module.eks_blueprints_addons.module.karpenter.aws_iam_role_policy_attachment.this[0]: Refreshing state... [id=karpenter-2025022219524563340000001d-20250222195247227400000020]
+module.eks_blueprints_addons.aws_eks_addon.this["kube-proxy"]: Refreshing state... [id=tf-eks-cluster:kube-proxy]
+module.eks_blueprints_addons.aws_eks_addon.this["vpc-cni"]: Refreshing state... [id=tf-eks-cluster:vpc-cni]
+module.eks_blueprints_addons.aws_eks_addon.this["aws-ebs-csi-driver"]: Refreshing state... [id=tf-eks-cluster:aws-ebs-csi-driver]
+module.eks_blueprints_addons.aws_eks_addon.this["coredns"]: Refreshing state... [id=tf-eks-cluster:coredns]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are
+indicated with the following symbols:
+  ~ update in-place
+-/+ destroy and then create replacement
+
+Terraform will perform the following actions:
+
+  # aws_eks_node_group.tf_eks_managed_node_group will be updated in-place
+  ~ resource "aws_eks_node_group" "tf_eks_managed_node_group" {
+        id                     = "tf-eks-cluster:tf-eks-managed-node-group"
+        tags                   = {
+            "Name" = "tf_eks_managed_node_group"
+        }
+        # (16 unchanged attributes hidden)
+
+      ~ launch_template {
+            id      = "lt-08826400b0c8c9c31"
+            name    = "tf-eks-node-lt20250222195213194000000012"
+          ~ version = "1" -> "$Latest"
+        }
+
+        # (2 unchanged blocks hidden)
+    }
+
+  # module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this[0] is tainted, so must be replaced
+-/+ resource "helm_release" "this" {
+      ~ id                         = "kube-prometheus-stack" -> (known after apply)
+      + manifest                   = (known after apply)
+      ~ metadata                   = [
+          - {
+              - app_version    = "v0.66.0"
+              - chart          = "kube-prometheus-stack"
+              - first_deployed = 1740253943
+              - last_deployed  = 1740253943
+              - name           = "kube-prometheus-stack"
+              - namespace      = "kube-prometheus-stack"
+              - notes          = <<-EOT
+                    1. Get the application URL by running these commands:
+                      export POD_NAME=$(kubectl get pods --namespace kube-prometheus-stack -l "app.kubernetes.io/name=prometheus-node-exporter,app.kubernetes.io/instance=kube-prometheus-stack" -o jsonpath="{.items[0].metadata.name}")
+                      echo "Visit http://127.0.0.1:9100 to use your application"
+                      kubectl port-forward --namespace kube-prometheus-stack $POD_NAME 9100
+                    kube-prometheus-stack has been installed. Check its status by running:
+                      kubectl --namespace kube-prometheus-stack get pods -l "release=kube-prometheus-stack"
+
+                    Visit https://github.com/prometheus-operator/kube-prometheus for instructions on how to create & configure Alertmanager and Prometheus instances using the Operator.
+
+                    kube-state-metrics is a simple service that listens to the Kubernetes API server and generates metrics about the state of the objects.
+                    The exposed metrics can be found here:
+                    https://github.com/kubernetes/kube-state-metrics/blob/master/docs/README.md#exposed-metrics
+
+                    The metrics are exported on the HTTP endpoint /metrics on the listening port.
+                    In your case, kube-prometheus-stack-kube-state-metrics.kube-prometheus-stack.svc.cluster.local:8080/metrics
+
+                    They are served either as plaintext or protobuf depending on the Accept header.
+                    They are designed to be consumed either by Prometheus itself or by a scraper that is compatible with scraping a Prometheus client endpoint.
+
+                    1. Get your 'admin' user password by running:
+
+                       kubectl get secret --namespace kube-prometheus-stack kube-prometheus-stack-grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+
+
+                    2. The Grafana server can be accessed via port 80 on the following DNS name from within your cluster:
+
+                       kube-prometheus-stack-grafana.kube-prometheus-stack.svc.cluster.local
+
+                       Get the Grafana URL to visit by running these commands in the same shell:
+                         export POD_NAME=$(kubectl get pods --namespace kube-prometheus-stack -l "app.kubernetes.io/name=grafana,app.kubernetes.io/instance=kube-prometheus-stack" -o jsonpath="{.items[0].metadata.name}")
+                         kubectl --namespace kube-prometheus-stack port-forward $POD_NAME 3000
+
+                    3. Login with the password from step 1 and the username: admin
+                    #################################################################################
+                    ######   WARNING: Persistence is disabled!!! You will lose your data when   #####
+                    ######            the Grafana pod is terminated.                            #####
+                    #################################################################################
+                EOT
+              - revision       = 1
+              - values         = jsonencode({})
+              - version        = "48.2.3"
+            },
+        ] -> (known after apply)
+        name                       = "kube-prometheus-stack"
+      ~ status                     = "failed" -> "deployed"
+        # (27 unchanged attributes hidden)
+    }
+
+Plan: 1 to add, 1 to change, 1 to destroy.
+module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this[0]: Destroying... [id=kube-prometheus-stack]
+aws_eks_node_group.tf_eks_managed_node_group: Modifying... [id=tf-eks-cluster:tf-eks-managed-node-group]
+module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this[0]: Destruction complete after 3s
+module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this[0]: Creating...
+aws_eks_node_group.tf_eks_managed_node_group: Still modifying... [id=tf-eks-cluster:tf-eks-managed-node-group, 10s elapsed]
+module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this[0]: Still creating... [10s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Still modifying... [id=tf-eks-cluster:tf-eks-managed-node-group, 20s elapsed]
+aws_eks_node_group.tf_eks_managed_node_group: Modifications complete after 24s [id=tf-eks-cluster:tf-eks-managed-node-group]
+module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this[0]: Still creating... [20s elapsed]
+module.eks_blueprints_addons.module.kube_prometheus_stack.helm_release.this[0]: Creation complete after 22s [id=kube-prometheus-stack]
+
+Apply complete! Resources: 1 added, 1 changed, 1 destroyed.
+
+Outputs:
+
+bastion_public_ip = "xxxxxxxx"
+rds_endpoint = "xxxxxxxx.com"
