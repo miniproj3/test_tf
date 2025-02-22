@@ -55,6 +55,8 @@ module "eks_blueprints_addons" {
   enable_cert_manager                    = true
   cert_manager_route53_hosted_zone_arns  = ["arn:aws:route53:::hostedzone/Z0606134MJ4WUL8MELBR"] # hostezone/<호스팅 영역ID>
 
+  depends_on = [ aws_eks_cluster.tf_eks_cluster ]
+
   tags                                   = {
     Environment                          = "dev"
   }
